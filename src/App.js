@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Login from './Components/Login'
 import {
     Nav,
     Navbar,
@@ -35,48 +36,7 @@ export default class app extends Component {
     render() {
         return (
             <div>
-                <Navbar color="light" light expand="md">
-                    <NavbarBrand href='/'>EventIF</NavbarBrand>
-                    <NavbarToggler onClick={this.toggle}/>
-                    <Collapse isOpen={this.state.isOpen} navbar>
-                        <Nav className="ml-auto" navbar>
-                            <NavItem>
-                    
-                                    Event
-                    
-                            </NavItem>
-                            <NavItem>
-                    
-                                    About
-                    
-                            </NavItem>
-                            <NavItem>
-                    
-                                    Login
-                    
-                            </NavItem>
-                        </Nav>
-                    </Collapse>
-                </Navbar>
-                <Jumbotron
-                    fluid
-                    style={{
-                    backgroundSize: 'cover',
-                    position: 'relative',
-                    padding: '20%'
-                }}>
-                    <h1>EventIF</h1>
-                </Jumbotron>
-                <Container>
-                <Row>
-                    <Col>
-                        <Card>text</Card>
-                    </Col>
-                    <Col>
-                        <Card>Test</Card>
-                    </Col>
-                </Row>
-                </Container>
+                <Login/>
             </div>
         );
     }
