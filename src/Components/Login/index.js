@@ -21,13 +21,9 @@ export default class Login extends Component {
     };
     responseFacebook = response => {
         console.log('response')
-        this.setState({isLoggedIn:  true,
-             UserID: response.UserID,
-             name: response.name,
-             email: response.email, 
-             picture: response.picture.data.url});
+        this.setState({isLoggedIn: true, UserID: response.UserID, name: response.name, email: response.email, picture: response.picture.data.url});
     };
-    
+
     componentClicked = () => console.log("Clicked");
     render() {
         let fbContent;
@@ -41,13 +37,14 @@ export default class Login extends Component {
                     padding: '20px'
                 }}>
                     <img src={this.state.picture} alt={this.state.name}/>
-                    <h2>Welcome{this.state.name}</h2>
+                    <h2>Welcome {this.state.name}</h2>
                     Email: {this.state.email}
                 </div>
             )
         } else {
             fbContent = (<FacebookLogin
                 appId="577232049750587"
+                redirectUri="http://localhost:3000"
                 autoLoad={true}
                 fields="name,email,picture"
                 onClick={this.componentClicked}
@@ -56,7 +53,7 @@ export default class Login extends Component {
         }
         return (
             <div>
-                {fbContent}
+                <Container>{fbContent}</Container>
             </div>
         )
     }

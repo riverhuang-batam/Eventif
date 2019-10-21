@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import {Card, Row, Col, Container} from 'reactstrap'
-export default class app extends Component {
+export default class Miniinfo extends Component {
     render() {
         return (
             <Container>

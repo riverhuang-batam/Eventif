@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
 import {Nav, Navbar,NavbarBrand, NavbarToggler,NavItem, UncontrolledDropdown,DropdownMenu, DropdownItem, Collapse, Jumbotron, Card, Row, Col } from 'reactstrap'
 import {Link} from 'react-router-dom'
-export default class Module extends Component{
+export default class navbar extends Component{
   constructor(props){
     super(props);
     this.toggle= this.toggle.bind(this)
@@ -23,11 +23,11 @@ render() {
         <Collapse isOpen={this.state.isOpen} navbar>
           <Nav className="ml-auto" navbar>
             <NavItem>
-                Event
+                Home
             </NavItem>
             <NavItem>
             
-                About
+                Event
             
             </NavItem>
             <NavItem>
@@ -38,10 +38,7 @@ render() {
           </Nav>
         </Collapse>
       </Navbar>
-      <Jumbotron>
-        <h1>EventIf</h1>
-        </Jumbotron>
-      gweafeafwefawe
+
    </div>
     );
   }
