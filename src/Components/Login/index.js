@@ -29,6 +29,7 @@ export default class Login extends Component {
         let fbContent;
         if (this.state.isLoggedIn) {
             fbContent = (
+                
                 <div
                     style={{
                     width: '400px',
@@ -39,6 +40,7 @@ export default class Login extends Component {
                     <img src={this.state.picture} alt={this.state.name}/>
                     <h2>Welcome {this.state.name}</h2>
                     Email: {this.state.email}
+                    <a href="#" onClick={(e)=>{e.preventDefault(); window.FB.logout()}}>logout</a>
                 </div>
             )
         } else {
