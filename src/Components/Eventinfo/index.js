@@ -2,17 +2,14 @@ import React, {Component} from 'react';
 import {CardBody,CardImg, Container, Button, Card, Row, Col} from 'reactstrap'
 export default class Eventinfo extends Component{
     state={
-        Description:'',
-        
+        Description:'',     
     }
-    colorButton= () =>{
-        
-    }
+   
     render(){
         return(
             <Container>
                 <Row><Col md="4">
-                <Card className="shadow">
+                <Card className="shadow mt-4">
                 <CardImg>
 
                 </CardImg>
@@ -27,6 +24,7 @@ export default class Eventinfo extends Component{
                 </CardBody>
                 </Card>
                 </Col></Row>
+                
             </Container>
         )
     }
