@@ -4,6 +4,7 @@ import {Route, Switch, HashRouter, NavLink} from 'react-router-dom'
 import Mainpages from '../../pages/Mainpages'
 import Eventpages from './../../pages/Eventpages'
 import Loginpages from './../../pages/Loginpages'
+import Profilepages from '../../pages/Profilepages'
 export default class navbar extends Component{
   constructor(props){
     super(props);
@@ -45,6 +46,11 @@ render() {
             
             </NavItem>
             </NavLink>
+            <NavLink to="Profilepages">
+              <NavItem>
+                Profile
+              </NavItem>
+            </NavLink>
           </Nav>
         </Collapse>
       </Navbar>
@@ -54,6 +60,7 @@ render() {
      <Route exact path="/" component={Mainpages}/>
      <Route exact path="/Eventpages" component={Eventpages}/>
      <Route exact path="/Loginpages" component={Loginpages}/>
+     <Route exact path="/Profilepages" component={Profilepages}/>
    </Switch>
    </HashRouter>
     );

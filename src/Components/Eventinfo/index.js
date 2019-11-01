@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {CardBody,CardImg, Container, Button, Card, Row, Col} from 'reactstrap'
+import Ruangkreasi from './../../Images/Ruangkreasi.jpg'
 export default class Eventinfo extends Component{
     state={
         Description:'',     
@@ -10,7 +11,7 @@ export default class Eventinfo extends Component{
             <Container>
                 <Row><Col md="4">
                 <Card className="shadow mt-4">
-                <CardImg>
+                <CardImg top width="100%" src={Ruangkreasi} alt={Ruangkreasi}>
 
                 </CardImg>
                 <CardBody>
