@@ -8,7 +8,7 @@ export default class Jumbotronmainpages extends Component {
             <div>
                 <HashRouter></HashRouter>
                 <Jumbotron fluid style={{backgroundImage:`url(${events})`, backgroundSize:'cover',position:'relative',padding:'20%'}}>
-                    <Button>Buat eventmu sekarang</Button>
+                    <Button><h1>Buat eventmu sekarang</h1></Button>
                 </Jumbotron>
             </div>
         )

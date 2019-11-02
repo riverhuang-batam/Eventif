@@ -22,32 +22,32 @@ render() {
   return (
     <HashRouter>
    <div>
-      <Navbar color="light" light expand="md" className="shadow mb-4">
+      <Navbar style={{position:'fixed', top:0, width:"100%", zIndex:"1030", paddingBottom:'15'}} color="light" light expand="md" className="shadow mb-4">
         <NavbarBrand href='/'>EventIF</NavbarBrand>
         <NavbarToggler onClick={this.toggle}/>
         <Collapse isOpen={this.state.isOpen} navbar>
           <Nav className="ml-auto" navbar>
             <NavLink to="/">
-            <NavItem>
+            <NavItem style={{paddingRight:"30px"}} activeStyle={{color:'red'}}>
                 Home
             </NavItem>
             </NavLink>
             <NavLink to="Eventpages">
-            <NavItem>
+            <NavItem style={{paddingRight:"30px"}} activeStyle={{color:'red'}}>
             
                 Event
             
             </NavItem>
             </NavLink>
-            <NavLink to="Loginpages">
-            <NavItem>
+            <NavLink to="Loginpages" activeStyle={{color:'red'}}>
+            <NavItem style={{paddingRight:"30px"}}>
             
                 Login
             
             </NavItem>
             </NavLink>
-            <NavLink to="Profilepages">
-              <NavItem>
+            <NavLink to="Profilepages" activeStyle={{color:'red'}}>
+              <NavItem style={{paddingRight:"30px"}}>
                 Profile
               </NavItem>
             </NavLink>

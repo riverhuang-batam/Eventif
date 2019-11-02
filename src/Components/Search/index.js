@@ -17,8 +17,8 @@ export default class Search extends Component {
         return (
             <div>
                 <Container>
-                    <Row><Col md="4">
-                    <Card className="shadow mt-4">
+                    <Row><Col md="4" style={{paddingTop:"80px"}} >
+                    <Card style={{postion:"absolute"}} className="shadow mt-4">
                         <Form>
                             <Container>
                             <FormGroup className="mt-4">

@@ -24,7 +24,86 @@ export default class Eventinfo extends Component{
                     <Button body inverse color="danger">Join</Button>
                 </CardBody>
                 </Card>
-                </Col></Row>
+                </Col>
+                <Col md="4">
+                <Card className="shadow mt-4">
+                <CardImg top width="100%" src={Ruangkreasi} alt={Ruangkreasi}>
+
+                </CardImg>
+                <CardBody>
+                    <h1>Title</h1>
+                    <p>Date:</p>
+                    <p>Location:</p>
+                    <p>Fee:</p>
+                    <p>Certificate:</p>
+                    <p>Description:</p>
+                    <Button body inverse color="danger">Join</Button>
+                </CardBody>
+                </Card>
+                </Col>
+                <Col md="4">
+                <Card className="shadow mt-4">
+                <CardImg top width="100%" src={Ruangkreasi} alt={Ruangkreasi}>
+
+                </CardImg>
+                <CardBody>
+                    <h1>Title</h1>
+                    <p>Date:</p>
+                    <p>Location:</p>
+                    <p>Fee:</p>
+                    <p>Certificate:</p>
+                    <p>Description:</p>
+                    <Button body inverse color="danger">Join</Button>
+                </CardBody>
+                </Card>
+                </Col>
+                <Col md="4">
+                <Card className="shadow mt-4">
+                <CardImg top width="100%" src={Ruangkreasi} alt={Ruangkreasi}>
+
+                </CardImg>
+                <CardBody>
+                    <h1>Title</h1>
+                    <p>Date:</p>
+                    <p>Location:</p>
+                    <p>Fee:</p>
+                    <p>Certificate:</p>
+                    <p>Description:</p>
+                    <Button body inverse color="danger">Join</Button>
+                </CardBody>
+                </Card>
+                </Col><Col md="4">
+                <Card className="shadow mt-4">
+                <CardImg top width="100%" src={Ruangkreasi} alt={Ruangkreasi}>
+
+                </CardImg>
+                <CardBody>
+                    <h1>Title</h1>
+                    <p>Date:</p>
+                    <p>Location:</p>
+                    <p>Fee:</p>
+                    <p>Certificate:</p>
+                    <p>Description:</p>
+                    <Button body inverse color="danger">Join</Button>
+                </CardBody>
+                </Card>
+                </Col><Col md="4">
+                <Card className="shadow mt-4">
+                <CardImg top width="100%" src={Ruangkreasi} alt={Ruangkreasi}>
+
+                </CardImg>
+                <CardBody>
+                    <h1>Title</h1>
+                    <p>Date:</p>
+                    <p>Location:</p>
+                    <p>Fee:</p>
+                    <p>Certificate:</p>
+                    <p>Description:</p>
+                    <Button body inverse color="danger">Join</Button>
+                </CardBody>
+                </Card>
+                </Col>
+                </Row>
                 
             </Container>
         )
