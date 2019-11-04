@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
 import {Nav, Navbar,NavbarBrand, NavbarToggler,NavItem, UncontrolledDropdown,DropdownMenu, DropdownItem, Collapse, Jumbotron, Card, Row, Col } from 'reactstrap'
 import {Route, Switch, HashRouter, NavLink} from 'react-router-dom'
-import Mainpages from './../../pages/Mainpages'
+import Mainpages from './../../pages/Mainpages/index'
 import Eventpages from './../../pages/Eventpages'
 import Loginpages from './../../pages/Loginpages'
 import Profilepages from '../../pages/Profilepages'
