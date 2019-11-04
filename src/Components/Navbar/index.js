@@ -57,7 +57,7 @@ render() {
 
    </div>
    <Switch>
-     
+   <Route exact path="/Home" component={Home}/>
      <Route exact path="/Eventpages" component={Eventpages}/>
      <Route exact path="/Loginpages" component={Loginpages}/>
      <Route exact path="/Profilepages" component={Profilepages}/>
