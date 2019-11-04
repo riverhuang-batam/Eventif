@@ -16,8 +16,13 @@ export default class Search extends Component {
     render() {
         return (
             <div>
-                <Container>
-                    <Row><Col md="4" style={{paddingTop:"80px"}} >
+                <Container style={{paddingTop:"80px"}}>
+                    <Row>
+                        <Col md="8" style={{paddingTop:"7%"}}>
+                            <h1>EventIF</h1>
+                            <h3>Find your wanted event here and get your skill and certificate for better future</h3>
+                        </Col>
+                        <Col md="4"  >
                     <Card style={{postion:"absolute"}} className="shadow mt-4">
                         <Form>
                             <Container>
@@ -32,7 +37,7 @@ export default class Search extends Component {
                             </FormGroup>
                             <FormGroup>
                             <Button>
-                                Filter
+                                Search
                             </Button>
                             </FormGroup>
                             </Container>

@@ -10,8 +10,8 @@ import {
     Row,
     Col
 } from 'reactstrap'
-import Facebooklogin from './../../Components/Facebooklogin'
-import Googlelogin from './../../Components/Googlelogin'
+import Login from './../../Components/Login'
+
 export default class Loginpages extends Component {
     render() {
         return (
@@ -27,8 +27,7 @@ export default class Loginpages extends Component {
                     </FormGroup>
                     <Button>Login</Button>
                 </Form>
-                <Facebooklogin/>
-                <Googlelogin/>
+                <Login/>
                 </CardBody>
                 </Col></Row>
             </div>

@@ -4,8 +4,8 @@ import {Container, Card, CardBody, Button, Jumbotron, Input, Form , FormGroup} f
 export default class Profilepages extends Component{
     render(){
         return(
-            <Container>
-                <Card className='shadow'>
+            <Container style={{paddingTop:"100px"}}>
+                <Card className='shadow' >
                     <CardBody>
                         <h1>Name:</h1>
                         <p>E-mail</p>

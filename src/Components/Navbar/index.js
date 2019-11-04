@@ -28,12 +28,12 @@ render() {
         <Collapse isOpen={this.state.isOpen} navbar>
           <Nav className="ml-auto" navbar>
             <NavLink to="/">
-            <NavItem style={{paddingRight:"30px"}} activeStyle={{color:'red'}}>
+            <NavItem style={{paddingRight:"30px"}}>
                 Home
             </NavItem>
             </NavLink>
-            <NavLink to="Eventpages">
-            <NavItem style={{paddingRight:"30px"}} activeStyle={{color:'red'}}>
+            <NavLink to="Eventpages" activeStyle={{color:'red'}}>
+            <NavItem style={{paddingRight:"30px"}} >
             
                 Event
             
