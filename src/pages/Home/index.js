@@ -1,10 +1,10 @@
 import React,{Component} from 'react'
-import JumbotronMainpages from '../../Components/Jumbotronmainpages'
+import Eventslide from '../../Components/Eventslide'
 export default class Home extends Component{
     render(){
         return(
             <div>
-                <JumbotronMainpages/>
+                <Eventslide/>
             </div>
         )
     }

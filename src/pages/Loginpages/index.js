@@ -16,7 +16,7 @@ export default class Loginpages extends Component {
     render() {
         return (
             <div>
-                <Row><Col md="4">
+                <Row><Col md="4" style={{paddingTop:"70px"}}>
                 <CardBody>
                 <Form>
                     <FormGroup>
