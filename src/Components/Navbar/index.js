@@ -2,6 +2,7 @@ import React,{Component} from 'react';
 import {Nav, Navbar,NavbarBrand, NavbarToggler,NavItem, UncontrolledDropdown,DropdownMenu, DropdownItem, Collapse, Jumbotron, Card, Row, Col } from 'reactstrap'
 import {Route, Switch, HashRouter, NavLink} from 'react-router-dom'
 import Home from './../../pages/Home'
+import Createevent from '../../pages/Createevent'
 import Eventpages from './../../pages/Eventpages'
 import Loginpages from './../../pages/Loginpages'
 import Profilepages from '../../pages/Profilepages'
@@ -32,6 +33,12 @@ render() {
                 Home
             </NavItem>
             </NavLink>
+            <NavLink to="Createevent" activeStyle={{color:'red'}}>
+              <NavItem style={{paddingRight:"30px"}}>
+                CreateEvent
+              </NavItem>
+            </NavLink>
+            
             <NavLink to="Eventpages" activeStyle={{color:'red'}}>
             <NavItem style={{paddingRight:"30px"}} >
             
@@ -46,11 +53,6 @@ render() {
             
             </NavItem>
             </NavLink>
-            <NavLink to="Profilepages" activeStyle={{color:'red'}}>
-              <NavItem style={{paddingRight:"30px"}}>
-                Profile
-              </NavItem>
-            </NavLink>
           </Nav>
         </Collapse>
       </Navbar>
@@ -60,6 +62,7 @@ render() {
    <Route exact path="/" component={Home}/>
      <Route exact path="/Eventpages" component={Eventpages}/>
      <Route exact path="/Loginpages" component={Loginpages}/>
+     <Route exact path="/Createevent" component={Createevent}/>
      <Route exact path="/Profilepages" component={Profilepages}/>
    </Switch>
    </HashRouter>
