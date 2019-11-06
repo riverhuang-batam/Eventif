@@ -16,20 +16,35 @@ export default class Loginpages extends Component {
     render() {
         return (
             <div>
-                <Row><Col md="4" style={{paddingTop:"70px"}}>
-                <CardBody>
-                <Form>
-                    <FormGroup>
-                        <Input type="email" placeholder="E-Mail"></Input>
-                    </FormGroup>
-                    <FormGroup>
-                        <Input type="password" placeholder="Password"/>
-                    </FormGroup>
-                    <Button>Login</Button>
-                </Form>
-                <Login/>
-                </CardBody>
-                </Col></Row>
+                <Row>
+                    <Col
+                        sm="12"
+                        md={{
+                        size: 6,
+                        offset: 3
+                    }}
+                        style={{
+                        paddingTop: "170px"
+                    }}>
+                        <Card className="shadow">
+                            <Container>
+                                <CardBody>
+                                    <Form>
+                                        <FormGroup>
+                                            <Input type="email" placeholder="E-Mail"></Input>
+                                        </FormGroup>
+                                        <FormGroup>
+                                            <Input type="password" placeholder="Password"/>
+                                        </FormGroup>
+                                        <Button>Login</Button>
+                                        <Button>Register</Button> 
+                                    </Form>
+                                    <Login/>
+                                </CardBody>
+                            </Container>
+                        </Card>
+                    </Col>
+                </Row>
             </div>
         )
     }
