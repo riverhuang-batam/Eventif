@@ -71,7 +71,7 @@ const items = [
             onExited={this.onExited}
             key={item.src}
           >
-            <img src={item.src} alt={item.altText} width="100%" height="450px"/>
+            <img src={item.src} alt={item.altText} width="100%" height="500px" style={{paddingTop:"55px"}}/>
             <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
           </CarouselItem>
         );
