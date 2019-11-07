@@ -5,12 +5,15 @@ import {
     Input,
     Button,
     Card,
+    CardImg,
     CardBody,
     FormGroup,
     Row,
     Col
 } from 'reactstrap'
 import Login from './../../Components/Login'
+import {Redirect,Switch,Route,HashRouter, Router} from 'react-router-dom'
+import Logoeventif from './../../Images/LOGOV2(GELAP).png'
 
 export default class Loginpages extends Component {
     render() {
@@ -24,10 +27,15 @@ export default class Loginpages extends Component {
                         offset: 3
                     }}
                         style={{
-                        paddingTop: "170px"
+                        paddingTop: "140px"
                     }}>
                         <Card className="shadow">
                             <Container>
+                                <Container>
+                                    <div className="text-center mt-4 mb-4">
+                                <img top width="40%" src={Logoeventif}/>
+                                </div>
+                                </Container>
                                 <CardBody>
                                     <Form>
                                         <FormGroup>

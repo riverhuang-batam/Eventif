@@ -4,15 +4,35 @@ import {HashRouter, Switch, Route, Link} from 'react-router-dom'
 import wallpapercreateevent from '../../Images/wallpapercreateevent.jpg'
 import Loginpages from './../Loginpages'
 
+
 export default class Createevent extends Component{
     render(){
+        const styleupload ={
+            position:"absolute",
+            paddingTop:"200px",
+            overflow:"hidden",
+            zIndex:"-1",
+            width:"0.1px",
+            height:"0.1px",
+            opacity:"0"
+        }
+        const labelupload = {
+            display:"inlineBlock",
+            cursor:'pointer',
+            backgroundColor: 'red',
+            padding:'15px 30px',
+            color:'white',
+            boxShadow:'$shadow',
+            transition: 'all 0.3s'
+        }
         return(
             <div>
                 <HashRouter>
                     <Row>
                 <Col sm="12" md={{ size: 8, offset: 2 }} style={{paddingTop:"100px"}}>
                     <Card className="shadow">
-                        <CardImg fluid top height="250px"  src={wallpapercreateevent}></CardImg>
+                        <Label style={labelupload}>upload</Label>
+                        <Input type="file" style={styleupload}>file</Input>
                         <CardBody>
                             <Form>
                         <FormGroup>
