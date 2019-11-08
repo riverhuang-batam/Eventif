@@ -5,7 +5,9 @@ import Home from './../../pages/Home'
 import Createevent from '../../pages/Createevent'
 import Eventpages from './../../pages/Eventpages'
 import Loginregister from './../../pages/Loginregister'
-import Profilepages from '../../pages/Profilepages'
+import Registerpages from '../../pages/Registerpages';
+import Loginpages from '../../pages/Loginpages'
+import eventiflogo from '../../Images/Logoeventifv2(black).png'
 export default class navbar extends Component{
   constructor(props){
     super(props);
@@ -24,7 +26,7 @@ render() {
     <HashRouter>
    <div>
       <Navbar style={{position:'fixed', top:0, width:"100%", zIndex:"1030", paddingBottom:'15'}} color="light" light expand="md" className="shadow mb-4">
-        <NavbarBrand href='/'>EventIF</NavbarBrand>
+        <NavbarBrand href='/'><img src={eventiflogo} width="80px"/></NavbarBrand>
         <NavbarToggler onClick={this.toggle}/>
         <Collapse isOpen={this.state.isOpen} navbar>
           <Nav className="ml-auto" navbar>
@@ -63,7 +65,8 @@ render() {
      <Route path="/Eventpages" component={Eventpages}/>
      <Route path="/Loginregister" component={Loginregister}/>
      <Route path="/Createevent" component={Createevent}/>
-     <Route exact path="/Profilepages" component={Profilepages}/>
+     <Route path="/Registerpages" component={Registerpages}/>
+     <Route path="/Loginpages" component={Loginpages}/>
    </Switch>
    </HashRouter>
     );

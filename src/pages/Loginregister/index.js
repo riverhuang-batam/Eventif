@@ -7,15 +7,16 @@ export default class LoginRegister extends Component{
         return(
             <HashRouter>
             <div className="text-center" style={{paddingTop:"120px"}}>
-                <Link to="/Loginregister">
+                <Link to="/Loginpages">
                 <a>Login</a>
                 </Link>
-                <Link to="/registerpages">
+                <Link to="/Registerpages">
                 <a>Register</a>
                 </Link>
             </div>
             <Switch>
-                <Route path="/Loginregister" component={Loginpages}/>
+
+                <Route path="/Loginpages" component={Loginpages}/>
                 <Route path="/Registerpages" component={Registerpages}/>
             </Switch>
             </HashRouter>

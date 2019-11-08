@@ -8,7 +8,7 @@ export default class Registerpages extends Component{
                 <Row><Col sm="12" md={{size:"4", offset:"4"}}>
                 <Card>
                     <div className="text-center mt-4 mb-4">
-                    <img src={logoeventif}width="40%"/>
+                    <img top src={logoeventif}width="40%"/>
                     </div>
                     <CardBody>
                         <Form>
