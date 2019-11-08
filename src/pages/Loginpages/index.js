@@ -12,8 +12,8 @@ import {
     Col
 } from 'reactstrap'
 import Login from './../../Components/Login'
-import {Redirect,Switch,Route,HashRouter, Router} from 'react-router-dom'
-import Logoeventif from './../../Images/LOGOV2(GELAP).png'
+import {Redirect, Switch, Route, HashRouter, Router} from 'react-router-dom'
+import Logoeventif from './../../Images/Logoeventifv2(black).png'
 
 export default class Loginpages extends Component {
     render() {
@@ -23,18 +23,17 @@ export default class Loginpages extends Component {
                     <Col
                         sm="12"
                         md={{
-                        size: 6,
-                        offset: 3
+                        size: 4,
+                        offset: 4
                     }}
-                        style={{
-                        paddingTop: "140px"
-                    }}>
+                    >
                         <Card className="shadow">
                             <Container>
+
                                 <Container>
                                     <div className="text-center mt-4 mb-4">
-                                <img top width="40%" src={Logoeventif}/>
-                                </div>
+                                        <img top width="40%" src={Logoeventif}/>
+                                    </div>
                                 </Container>
                                 <CardBody>
                                     <Form>
@@ -45,7 +44,6 @@ export default class Loginpages extends Component {
                                             <Input type="password" placeholder="Password"/>
                                         </FormGroup>
                                         <Button>Login</Button>
-                                        <Button>Register</Button> 
                                     </Form>
                                     <Login/>
                                 </CardBody>

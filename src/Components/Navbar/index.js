@@ -4,7 +4,7 @@ import {Route, Switch, HashRouter, NavLink} from 'react-router-dom'
 import Home from './../../pages/Home'
 import Createevent from '../../pages/Createevent'
 import Eventpages from './../../pages/Eventpages'
-import Loginpages from './../../pages/Loginpages'
+import Loginregister from './../../pages/Loginregister'
 import Profilepages from '../../pages/Profilepages'
 export default class navbar extends Component{
   constructor(props){
@@ -46,7 +46,7 @@ render() {
             
             </NavItem>
             </NavLink>
-            <NavLink to="Loginpages" activeStyle={{color:'red'}}>
+            <NavLink to="Loginregister" activeStyle={{color:'red'}}>
             <NavItem style={{paddingRight:"30px"}}>
             
                 Login
@@ -61,7 +61,7 @@ render() {
    <Switch>
    <Route exact path="/" component={Home}/>
      <Route exact path="/Eventpages" component={Eventpages}/>
-     <Route exact path="/Loginpages" component={Loginpages}/>
+     <Route exact path="/Loginregister" component={Loginregister}/>
      <Route exact path="/Createevent" component={Createevent}/>
      <Route exact path="/Profilepages" component={Profilepages}/>
    </Switch>
