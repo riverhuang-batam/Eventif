@@ -1,22 +1,22 @@
 import React, {Component} from 'react'
 import {Switch, Route, HashRouter, Link } from 'react-router-dom'
 import Loginpages from './../Loginpages'
-import Registerpages from '../Registerpages'
-export default class Loginregister extends Component{
+import Registerpages from './../Registerpages'
+export default class LoginRegister extends Component{
     render(){
         return(
             <HashRouter>
             <div className="text-center" style={{paddingTop:"120px"}}>
-                <Link to="/">
+                <Link to="/Loginregister">
                 <a>Login</a>
                 </Link>
-                <Link to="Registerpages">
+                <Link to="/registerpages">
                 <a>Register</a>
                 </Link>
             </div>
             <Switch>
-                <Route exact path="/" component={Loginpages}/>
-                <Route exact path="/Registerpages" component={Registerpages}/>
+                <Route path="/Loginregister" component={Loginpages}/>
+                <Route path="/Registerpages" component={Registerpages}/>
             </Switch>
             </HashRouter>
         )

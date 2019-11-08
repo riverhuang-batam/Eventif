@@ -60,9 +60,9 @@ render() {
    </div>
    <Switch>
    <Route exact path="/" component={Home}/>
-     <Route exact path="/Eventpages" component={Eventpages}/>
-     <Route exact path="/Loginregister" component={Loginregister}/>
-     <Route exact path="/Createevent" component={Createevent}/>
+     <Route path="/Eventpages" component={Eventpages}/>
+     <Route path="/Loginregister" component={Loginregister}/>
+     <Route path="/Createevent" component={Createevent}/>
      <Route exact path="/Profilepages" component={Profilepages}/>
    </Switch>
    </HashRouter>
