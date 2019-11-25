@@ -1,16 +1,4 @@
 import React, {Component} from 'react'
-import {
-    Row,
-    Col,
-    Container,
-    Form,
-    FormGroup,
-    Label,
-    Input,
-    Card,
-    Button
-} from 'reactstrap'
-import {redirect} from 'react-router-dom'
 import FacebookLogin from 'react-facebook-login'
 import GoogleLogin from 'react-google-login'
 export default class Login extends Component {

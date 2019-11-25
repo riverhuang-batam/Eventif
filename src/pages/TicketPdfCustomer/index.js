@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Card, Row, Col, Form, Input, FormGroup, UncontrolledButtonDropdown,Button} from 'reactstrap';
-export default class TicketForm extends Component{
+export default class TicketPdfCustomer extends Component{
     render(){
         return(
             <div>

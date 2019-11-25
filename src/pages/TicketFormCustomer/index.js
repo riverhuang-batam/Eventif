@@ -10,7 +10,7 @@ import {
     Button,
     Label
 } from 'reactstrap';
-export default class TicketForm extends Component {
+export default class TicketFormCustomer extends Component {
     render() {
         return (
             <div>

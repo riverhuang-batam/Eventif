@@ -1,14 +1,11 @@
 import React, {Component} from 'react'
 import {
     Form,
-    InputGroupAddon,
     Input,
     FormGroup,
     Button,
     Container,
     Card,
-    CardBody,
-    CardImg,
     Row,
     Col
 } from 'reactstrap'

@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {Container, CardBody,Card, CardImg, Jumbotron, Input, Row, Col, FormGroup, Form, Button, Nav, NavItem, Label} from 'reactstrap'
+import {CardBody,Card, Input, Row, Col, FormGroup, Form, Button, Label} from 'reactstrap'
 import {HashRouter, Switch, Route, Link} from 'react-router-dom'
 import wallpapercreateevent from '../../Images/wallpapercreateevent.jpg'
 import Loginpages from './../Loginpages'

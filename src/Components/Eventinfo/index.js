@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {CardBody,CardImg, Container, Button, Card, Row, Col} from 'reactstrap'
 import Ruangkreasi from './../../Images/Ruangkreasi.jpg'
 import {Switch, HashRouter, Route, Link} from 'react-router-dom';
-import TicketForm from '../../pages/TicketForm'
+import TicketFormCustomer from '../../pages/TicketFormCustomer'
 export default class Eventinfo extends Component{
     state={
         Description:'',     
@@ -27,7 +27,7 @@ export default class Eventinfo extends Component{
                     <p>Description:</p>
                     
                     <Button body inverse color="danger">
-                    <Link to="/TicketForm">Join
+                    <Link to="/TicketFormCustomer">Join
                     </Link>
                     </Button>
                     
@@ -118,7 +118,7 @@ export default class Eventinfo extends Component{
                 
             </Container>
            <Switch>
-           <Route exact path="TicketForm" component={TicketForm}/>
+           <Route exact path="TicketFormCustomer" component={TicketFormCustomer}/>
            
        </Switch>
        </HashRouter>

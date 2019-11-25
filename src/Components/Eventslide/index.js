@@ -1,6 +1,5 @@
 import React, {Component} from 'react'
-import {Container, Jumbotron, Button, UncontrolledCarousel,Carousel, CarouselItem, CarouselCaption, CarouselControl,CarouselIndicators} from 'reactstrap'
-import {Link, Route,Redirect, HashRouter, Switch} from 'react-router-dom'
+import {Carousel, CarouselItem, CarouselCaption, CarouselControl,CarouselIndicators} from 'reactstrap'
 import Createevent from '../../pages/Createevent'
 import events from '../../Images/events.jpg'
 const items = [

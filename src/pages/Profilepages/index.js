@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {Container, Card, CardBody, Button, Jumbotron, Input, Form , FormGroup} from 'reactstrap'
+import {Container, Card, CardBody} from 'reactstrap'
 export default class Profilepages extends Component{
     render(){
         return(

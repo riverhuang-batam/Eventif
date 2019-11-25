@@ -7,7 +7,11 @@ import {
     UncontrolledButtonDropdown,
     Button,
     Input,
-    FormGroup
+    FormGroup,
+    Modal,
+    ModalFooter,
+    ModalBody,
+    ModalHeader
 } from 'reactstrap';
 import EventIFLogo from './../../Images/Logoeventifv2(black).png'
 import Bca from '../../Images/bca.jpg'
@@ -16,7 +20,21 @@ import Bni from '../../Images/bni.png'
 import Gopay from '../../Images/gopay.jpg'
 import Alfamart from '../../Images/alfamart.jpg'
 import Indomaret from '../../Images/indomaret.png'
-export default class TicketPayment extends Component {
+export default class TicketPaymentCustomer extends Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            modal: false,
+        };
+        this.toggle = this.toggle.bind(this);
+        
+    }
+    toggle = () =>{
+        this.setState(prevState =>({
+            modal:!prevState.modal
+        }))
+    }
+
     render() {
         return (
             <div>
@@ -24,9 +42,11 @@ export default class TicketPayment extends Component {
 
                     <Card>
                         <div className="text-center">
-                            <img src={EventIFLogo} width="200px"/>
+                            <img src={EventIFLogo} width="200px" style={{paddingTop:"50px"}}/>
                         </div>
-
+                        <p>
+                            Name:
+                        </p>
                         <p>Ticket:
                             <span
                                 style={{
@@ -49,48 +69,60 @@ export default class TicketPayment extends Component {
                         <p>Payment Method:</p>
 
                         <Row>
-                            <Col md="4">
-                                <FormGroup check inline>
+                            
+                            
+                        </Row>
+
+                        <Button body inverse color="success"onClick={this.toggle}>Pay</Button>
+                    </Card>
+                </Container>
+                <Modal
+                isOpen={this.state.modal}
+                toggle={this.toggle}
+                >
+                    <ModalHeader
+                    toggle={this.toggle}
+                    >
+                        
+                    </ModalHeader>
+                    <ModalBody>
+                    <FormGroup check inline>
                                     <Input type="checkbox" inline/>
                                     <img src={Bca} width="200px"/>
                                 </FormGroup>
-                            </Col>
-                            <Col md="4">
+                            
                                 <FormGroup check inline>
                                     <Input type="checkbox"/>
                                     <img src={Bri} width="200px"/>
                                 </FormGroup>
-                            </Col>
-                            <Col md="4">
+                            
                                 <FormGroup check inline>
                                     <Input type="checkbox"/>
                                     <img src={Bni} width="200px"/>
                                 </FormGroup>
-                            </Col>
-                            <Col md="4">
+                            
                                 <FormGroup check inline>
                                     <Input type="checkbox"/>
                                     <img src={Gopay} width="200px"/>
                                 </FormGroup>
-                            </Col>
-                            <Col md="4">
+                            
                                 <FormGroup check inline>
                                     <Input type="checkbox"/>
                                     <img src={Alfamart} width="200px"/>
                                 </FormGroup>
-                            </Col>
-                            <Col md="4">
+                            
                                 <FormGroup check inline>
                                     <Input type="checkbox"/>
                                     <img src={Indomaret} width="200px"/>
                                 </FormGroup>
-                            </Col>
+                            
 
-                        </Row>
-
-                        <Button body inverse color="success">Pay</Button>
-                    </Card>
-                </Container>
+                    </ModalBody>
+                    <ModalFooter>
+                            <Button onClick={this.toggle}>OK</Button>
+                            <Button onClick={this.toggle}>Cancel</Button>
+                    </ModalFooter>
+                </Modal>
             </div>
         )
     }

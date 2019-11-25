@@ -5,14 +5,12 @@ import {
     Input,
     Button,
     Card,
-    CardImg,
     CardBody,
     FormGroup,
     Row,
     Col
 } from 'reactstrap'
 import Login from './../../Components/Login'
-import {Redirect, Switch, Route, HashRouter, Router} from 'react-router-dom'
 import Logoeventif from './../../Images/Logoeventifv2(black).png'
 
 export default class Loginpages extends Component {
