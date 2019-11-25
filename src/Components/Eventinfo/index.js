@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import {CardBody,CardImg, Container, Button, Card, Row, Col} from 'reactstrap'
 import Ruangkreasi from './../../Images/Ruangkreasi.jpg'
+import {Switch, HashRouter, Route, Link} from 'react-router-dom';
+
 export default class Eventinfo extends Component{
     state={
         Description:'',     
@@ -8,6 +10,8 @@ export default class Eventinfo extends Component{
    
     render(){
         return(
+            
+            
             <Container>
                 <Row><Col md="4">
                 <Card className="shadow mt-4">
@@ -21,7 +25,12 @@ export default class Eventinfo extends Component{
                     <p>Fee:</p>
                     <p>Certificate:</p>
                     <p>Description:</p>
-                    <Button body inverse color="danger">Join</Button>
+                    
+                    <Button body inverse color="danger">
+                    <Link to="/TicketForm">Join
+                    </Link>
+                    </Button>
+                    
                 </CardBody>
                 </Card>
                 </Col>
@@ -99,13 +108,16 @@ export default class Eventinfo extends Component{
                     <p>Fee:</p>
                     <p>Certificate:</p>
                     <p>Description:</p>
+                    
                     <Button body inverse color="danger">Join</Button>
+                    
                 </CardBody>
                 </Card>
                 </Col>
                 </Row>
                 
             </Container>
+           
         )
     }
 }

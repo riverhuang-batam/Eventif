@@ -23,12 +23,18 @@ export default class Login extends Component {
     }
     signup(res, type){}
 
-    componentClicked = () => console.log("Clicked");
+    componentClicked = () => {
+        console.log("Clicked");
+        document.getElementById('event').style.display = 'block'
+        window.location.hash = '/'
+    }
     render() {
         
         const responseFacebook = (response) =>{
             console.log(response)
             this.signup(response, 'facebook')
+            
+            debugger;
         }
         const responseGoogle = (response) =>{
             console.log(response)

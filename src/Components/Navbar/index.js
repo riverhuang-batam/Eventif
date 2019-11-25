@@ -35,20 +35,20 @@ render() {
                 Home
             </NavItem>
             </NavLink>
-            <NavLink to="Createevent" activeStyle={{color:'red'}}>
+            <NavLink style={{ display: "none" }} id="event" to="Createevent" activeStyle={{color:'red'}}>
               <NavItem style={{paddingRight:"30px"}}>
                 CreateEvent
               </NavItem>
             </NavLink>
             
-            <NavLink to="Eventpages" activeStyle={{color:'red'}}>
-            <NavItem style={{paddingRight:"30px"}} >
+            <NavLink to="/Eventpages" activeStyle={{color:'red'}}>
+            <NavItem  style={{paddingRight:"30px"}} >
             
                 Event
             
             </NavItem>
             </NavLink>
-            <NavLink to="Loginregister" activeStyle={{color:'red'}}>
+            <NavLink to="/Loginregister" activeStyle={{color:'red'}}>
             <NavItem style={{paddingRight:"30px"}}>
             
                 Login
@@ -62,7 +62,7 @@ render() {
    </div>
    <Switch>
    <Route exact path="/" component={Home}/>
-     <Route path="/Eventpages" component={Eventpages}/>
+     <Route exact path="/Eventpages" component={Eventpages}/>
      <Route path="/Loginregister" component={Loginregister}/>
      <Route path="/Createevent" component={Createevent}/>
      <Route path="/Registerpages" component={Registerpages}/>

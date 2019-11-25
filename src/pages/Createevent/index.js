@@ -36,19 +36,22 @@ export default class Createevent extends Component{
                         <CardBody>
                             <Form>
                         <FormGroup>
-                            <Input type="text" placeholder="Nama Event*"></Input>
+                            <Input type="text" placeholder="Nama Event" required></Input>
                             </FormGroup>
                             <FormGroup>
-                            <Input type="text" placeholder="Pilih Kategori Event"></Input>
+                            <Input type="text" placeholder="Pilih Kategori Event" required></Input>
                             </FormGroup>
                             <FormGroup>
-                                <Input type="text" placeholder="Location"></Input>
+                                <Input type="text" placeholder="Location" required></Input>
                             </FormGroup>
                             <FormGroup>
-                            <Input type="text" placeholder="Payment Price"></Input>
+                                <Input type="date" required></Input>
                             </FormGroup>
                             <FormGroup>
-                            <Input type="text" placeholder="Payment Method"></Input>
+                            <Input type="text" placeholder="Payment Price" required></Input>
+                            </FormGroup>
+                            <FormGroup>
+                            <Input type="text" placeholder="Payment Method" required></Input>
                             </FormGroup>
                             <Row><Col>
                             <p className="text-center">Diselenggarakan Oleh</p>

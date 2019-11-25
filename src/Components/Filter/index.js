@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {ButtonDropdown, DropdownItem, DropdownToggle, DropdownMenu, UncontrolledButtonDropdown, Container} from 'reactstrap'
+import {Label, Input, FormGroup, Container} from 'reactstrap'
 
 export default class Filter extends Component {
 
@@ -8,14 +8,16 @@ export default class Filter extends Component {
         return (
             <div className="mt-4">
                 <Container>
-                <UncontrolledButtonDropdown >
-                    <DropdownToggle caret color="primary">
-                        Filter
-                    </DropdownToggle>
-                    <DropdownMenu>
-                        <DropdownItem header>Certificated</DropdownItem>
-                    </DropdownMenu>
-                </UncontrolledButtonDropdown>
+                    <FormGroup>
+                        <Label >Select</Label>
+                        <Input type="select" name="select">
+                            <option>Certificated</option>
+                            <option>Free</option>
+                            <option>2 hour event times</option>
+                            <option>food</option>
+
+                        </Input>
+                    </FormGroup>
                 </Container>
             </div>
 

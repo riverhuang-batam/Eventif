@@ -1,16 +1,25 @@
 import React, {Component} from 'react'
-import {Row} from 'reactstrap'
 import Search from './../../Components/Search'
 import Eventinfo from './../../Components/Eventinfo'
 import Filter from '../../Components/Filter'
-export default class App extends Component{
+import {Switch, HashRouter, Route, Link} from 'react-router-dom';
+import TicketForm from '../TicketForm'
+export default class Eventpages extends Component{
     render(){
         return(
+            <HashRouter>
             <div>
+
+            
                 <Search/>
                 <Filter/>
                 <Eventinfo/>
-            </div>
+                </div>
+                <Switch>
+                <Route path="/TicketForm" component={TicketForm}/>
+                
+            </Switch>
+            </HashRouter>
         )
     }
 }
