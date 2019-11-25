@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {CardBody,CardImg, Container, Button, Card, Row, Col} from 'reactstrap'
 import Ruangkreasi from './../../Images/Ruangkreasi.jpg'
 import {Switch, HashRouter, Route, Link} from 'react-router-dom';
-
+import TicketForm from '../../pages/TicketForm'
 export default class Eventinfo extends Component{
     state={
         Description:'',     
@@ -11,7 +11,7 @@ export default class Eventinfo extends Component{
     render(){
         return(
             
-            
+            <HashRouter>
             <Container>
                 <Row><Col md="4">
                 <Card className="shadow mt-4">
@@ -117,7 +117,12 @@ export default class Eventinfo extends Component{
                 </Row>
                 
             </Container>
+           <Switch>
+           <Route exact path="TicketForm" component={TicketForm}/>
            
+       </Switch>
+       </HashRouter>
+   
         )
     }
 }

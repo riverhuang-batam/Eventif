@@ -20,6 +20,7 @@ export default class Loginpages extends Component {
         return (
             <div>
                 <Row>
+                    <Container>
                     <Col
                         sm="12"
                         md={{
@@ -32,7 +33,7 @@ export default class Loginpages extends Component {
 
                                 <Container>
                                     <div className="text-center mt-4 mb-4">
-                                        <img top width="40%" src={Logoeventif}/>
+                                        <img top width="46%" src={Logoeventif}/>
                                     </div>
                                 </Container>
                                 <CardBody>
@@ -50,6 +51,7 @@ export default class Loginpages extends Component {
                             </Container>
                         </Card>
                     </Col>
+                    </Container>
                 </Row>
             </div>
         )
