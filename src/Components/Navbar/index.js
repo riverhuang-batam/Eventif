@@ -6,7 +6,11 @@ import Createevent from '../../pages/Createevent'
 import Eventpages from './../../pages/Eventpages'
 import Loginregister from './../../pages/Loginregister'
 import Registerpages from '../../pages/Registerpages';
-import Loginpages from '../../pages/Loginpages'
+import Loginpages from '../../pages/Loginpages';
+import TicketFormCustomer from '../../pages/TicketFormCustomer'
+import TicketPaymentCustomer from '../../pages/TicketPaymentCustomer'
+import TicketPdfCustomer from '../../pages/TicketPdfCustomer'
+import TicketCreate from '../../pages/TicketCreate'
 import eventiflogo from '../../Images/Logoeventifv2(black).png'
 export default class navbar extends Component{
   constructor(props){
@@ -66,7 +70,11 @@ render() {
      <Route path="/Loginregister" component={Loginregister}/>
      <Route path="/Createevent" component={Createevent}/>
      <Route path="/Registerpages" component={Registerpages}/>
-     <Route path="/Loginpages" component={Loginpages}/>
+     <Route path="/Loginpages" component = {Loginpages}/>
+     <Route path="/TicketFormCustomer" component = {TicketFormCustomer}/>
+     <Route path="/TicketPaymentCustomer" component = {TicketPaymentCustomer}/>
+     <Route path="/TicketPdfCustomer" component = {TicketPdfCustomer}/>
+     <Route path="/TicketCreate" component = {TicketCreate}/>
    </Switch>
    </HashRouter>
     );

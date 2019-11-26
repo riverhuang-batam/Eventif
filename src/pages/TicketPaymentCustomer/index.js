@@ -4,7 +4,6 @@ import {
     Row,
     Col,
     Container,
-    UncontrolledButtonDropdown,
     Button,
     Input,
     FormGroup,
@@ -14,12 +13,14 @@ import {
     ModalHeader
 } from 'reactstrap';
 import EventIFLogo from './../../Images/Logoeventifv2(black).png'
+import TicketPdfCustomer from '../TicketPdfCustomer'
 import Bca from '../../Images/bca.jpg'
 import Bri from '../../Images/bri.png'
 import Bni from '../../Images/bni.png'
 import Gopay from '../../Images/gopay.jpg'
 import Alfamart from '../../Images/alfamart.jpg'
 import Indomaret from '../../Images/indomaret.png'
+import {HashRouter, Route, Switch, Link} from 'react-router-dom'
 export default class TicketPaymentCustomer extends Component {
     constructor(props){
         super(props);
@@ -37,12 +38,17 @@ export default class TicketPaymentCustomer extends Component {
 
     render() {
         return (
-            <div>
+            <HashRouter>
+            <div style={{
+                        paddingTop: "120px"
+                    }}>
                 <Container>
 
                     <Card>
+                    <Container>
                         <div className="text-center">
-                            <img src={EventIFLogo} width="200px" style={{paddingTop:"50px"}}/>
+                            
+                            <img src={EventIFLogo} width="200px" className="mt-4 mb-4"/>
                         </div>
                         <p>
                             Name:
@@ -66,14 +72,10 @@ export default class TicketPaymentCustomer extends Component {
                                 textAlign: "right"
                             }}>0</span>
                         </p>
-                        <p>Payment Method:</p>
-
-                        <Row>
-                            
-                            
-                        </Row>
-
+                        
+                        </Container>
                         <Button body inverse color="success"onClick={this.toggle}>Pay</Button>
+                        
                     </Card>
                 </Container>
                 <Modal
@@ -82,7 +84,7 @@ export default class TicketPaymentCustomer extends Component {
                 >
                     <ModalHeader
                     toggle={this.toggle}
-                    >
+                    >Payment Method
                         
                     </ModalHeader>
                     <ModalBody>
@@ -119,11 +121,17 @@ export default class TicketPaymentCustomer extends Component {
 
                     </ModalBody>
                     <ModalFooter>
+                        <Link to="/TicketPdfCustomer">
                             <Button onClick={this.toggle}>OK</Button>
+                            </Link>
                             <Button onClick={this.toggle}>Cancel</Button>
                     </ModalFooter>
                 </Modal>
             </div>
+            <Switch>
+                <Route path="/TicketPdfCustomer" component={TicketPdfCustomer}/>
+            </Switch>
+            </HashRouter>
         )
     }
 }

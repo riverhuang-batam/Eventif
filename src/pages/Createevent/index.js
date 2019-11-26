@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import {CardBody,Card, Input, Row, Col, FormGroup, Form, Button, Label} from 'reactstrap'
 import {HashRouter, Switch, Route, Link} from 'react-router-dom'
+import TicketCreate from '../TicketCreate'
 import wallpapercreateevent from '../../Images/wallpapercreateevent.jpg'
 import Loginpages from './../Loginpages'
 
@@ -68,7 +69,9 @@ export default class Createevent extends Component{
                     <Input type="textarea" placeholder="your event description"/>
                     </FormGroup>
                 <FormGroup>
+                    <Link to="TicketCreate">
                     <Button>Create Event</Button>
+                    </Link>
                 </FormGroup>
                             </Form>
 
@@ -78,7 +81,7 @@ export default class Createevent extends Component{
                 </Col>
                 </Row>
                 <Switch>
-                    <Route exact path="#" Component={Loginpages}/>
+                    <Route path="TicketCreate" Component={TicketCreate}/>
                 </Switch>
                 </HashRouter>
             </div>

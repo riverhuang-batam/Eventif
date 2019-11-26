@@ -10,43 +10,56 @@ import {
     Button,
     Label
 } from 'reactstrap';
+import {HashRouter, Route, Switch, Link} from 'react-router-dom'
+import TicketPaymentCustomer from '../TicketPaymentCustomer';
+
 export default class TicketFormCustomer extends Component {
     render() {
         return (
-            <div>
-                <Row>
-                    <Col xs="8">
-                        <Card shadow>
-                            <Form>
-                                <FormGroup>
-                                    <Input></Input>
-                                    <Button>+</Button>
-                                    <Button>-</Button>
-                                </FormGroup>
-                                <FormGroup>
-                                    <Input placeholder="Name"></Input>
-                                </FormGroup>
-                                <FormGroup>
-                                    <Label >Ticket</Label>
-                                    <Input type="select" name="select">
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                    </Input>
-                                </FormGroup>
-                                <FormGroup>
-                                    <Input></Input>
-                                </FormGroup>
-                                <FormGroup>
-                                    <Button>Buy Ticket</Button>
-                                </FormGroup>
-                            </Form>
-                        </Card>
-                    </Col>
-                </Row>
-            </div>
+            <HashRouter>
+                <div style={{
+                        paddingTop: "120px"
+                    }}  >
+
+                    <Row>
+                        <Col xs="8">
+                            <Card shadow>
+                                <Form>
+                                    <FormGroup>
+                                        <Input></Input>
+                                        <Button>+</Button>
+                                        <Button>-</Button>
+                                    </FormGroup>
+                                    <FormGroup>
+                                        <Input placeholder="Name"></Input>
+                                    </FormGroup>
+                                    <FormGroup>
+                                        <Label >Ticket</Label>
+                                        <Input type="select" name="select">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </Input>
+                                    </FormGroup>
+                                    <FormGroup>
+                                        <Input></Input>
+                                    </FormGroup>
+                                    <FormGroup>
+                                        <Link to="TicketPaymentCustomer">
+                                        <Button>Buy Ticket</Button>
+                                        </Link>
+                                    </FormGroup>
+                                </Form>
+                            </Card>
+                        </Col>
+                    </Row>
+                </div>
+                <Switch>
+                    <Route path="TicketPaymentCustomer" component={TicketPaymentCustomer}/>
+                </Switch>
+            </HashRouter>
         )
     }
 }
