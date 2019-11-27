@@ -4,7 +4,7 @@ import logoeventif from './../../Images/Logoeventifv2(black).png'
 export default class Registerpages extends Component{
     render(){
         return(
-            <div>
+            <div style={{backgroundColor:"#E5E5E5"}}>
                 
                 <Row><Col sm="12" md={{size:"4", offset:"4"}}>
                 <Card>

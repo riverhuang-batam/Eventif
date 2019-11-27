@@ -6,10 +6,12 @@ import {
     Form,
     Input,
     FormGroup,
-    UncontrolledButtonDropdown,
+    Table,
     Button,
-    Label
+    CardImg,
+    Container
 } from 'reactstrap';
+import RuangKreasi from '../../Images/Ruangkreasi.jpg'
 import {HashRouter, Route, Switch, Link} from 'react-router-dom'
 import TicketPaymentCustomer from '../TicketPaymentCustomer';
 
@@ -18,48 +20,64 @@ export default class TicketFormCustomer extends Component {
         return (
             <HashRouter>
                 <div style={{
-                        paddingTop: "120px",
-                        backgroundColor:"#E5E5E5"
-                    }}  >
-
-                    <Row>
-                        <Col xs="8">
+                    paddingTop: "120px"
+                }}>
+                <Container>
+                    
                             <Card shadow>
-                                <Form>
-                                    <FormGroup>
-                                        <Input></Input>
-                                        <Button>+</Button>
-                                        <Button>-</Button>
-                                    </FormGroup>
-                                    <FormGroup>
-                                        <Input placeholder="Name"></Input>
-                                    </FormGroup>
-                                    <FormGroup>
-                                        <Label >Ticket</Label>
-                                        <Input type="select" name="select">
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                            <option>5</option>
-                                        </Input>
-                                    </FormGroup>
-                                    <FormGroup>
-                                        <Input></Input>
-                                    </FormGroup>
-                                    <FormGroup>
+                                <CardImg src={RuangKreasi} width="100%" height="300vw"/>
+                                <Table>
+                                    <thead>
+                                        <tr>
+                                            <th>Jenis Ticket</th>
+                                            <th>Harga per Ticket</th>
+                                            <th>Kuantitas</th>
+                                            <th>Jumlah</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Ticket Reguler</td>
+                                            <td>Rp. 30000</td>
+                                            <td>
+                                                <Input type="select" name="select">
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                </Input>
+                                            </td>
+                                            <td>Rp. 0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ticket Spesial</td>
+                                            <td>Rp. 30000</td>
+                                            <td>
+                                                <Input type="select" name="select">
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                </Input>
+                                            </td>
+                                            <td>Rp. 0</td>
+                                        </tr>
+
+                                    </tbody>
+                                </Table>
                                         <Link to="TicketPaymentCustomer">
-                                        <Button>Buy Ticket</Button>
+                                            <Button block>Buy Ticket</Button>
                                         </Link>
-                                    </FormGroup>
-                                </Form>
                             </Card>
-                        </Col>
-                    </Row>
+                        
+                    </Container>
                 </div>
                 <Switch>
                     <Route path="TicketPaymentCustomer" component={TicketPaymentCustomer}/>
                 </Switch>
+                
             </HashRouter>
         )
     }

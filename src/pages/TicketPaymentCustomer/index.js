@@ -130,7 +130,7 @@ export default class TicketPaymentCustomer extends Component {
                     </ModalFooter>
                 </Modal>
             </div>
-            <div style={{backgroundColor:"#E5E5E5"}}>
+            <div>
             <Switch>
                 <Route path="/TicketPdfCustomer" component={TicketPdfCustomer}/>
             </Switch>
