@@ -40,7 +40,9 @@ export default class TicketPaymentCustomer extends Component {
         return (
             <HashRouter>
             <div style={{
-                        paddingTop: "120px"
+                        paddingTop: "120px",
+                        backgroundColor:"#E5E5E5",
+                        paddingBottom: "50%"
                     }}>
                 <Container>
 
@@ -128,9 +130,11 @@ export default class TicketPaymentCustomer extends Component {
                     </ModalFooter>
                 </Modal>
             </div>
+            <div style={{backgroundColor:"#E5E5E5"}}>
             <Switch>
                 <Route path="/TicketPdfCustomer" component={TicketPdfCustomer}/>
             </Switch>
+            </div>
             </HashRouter>
         )
     }

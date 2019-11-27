@@ -16,7 +16,7 @@ import Logoeventif from './../../Images/Logoeventifv2(black).png'
 export default class Loginpages extends Component {
     render() {
         return (
-            <div>
+            <div style={{backgroundColor:"#E5E5E5"}}>
                 <Row>
                     <Container>
                     <Col

@@ -5,15 +5,16 @@ import {
     Col,
     Button,
 } from 'reactstrap';
+import eticket from '../../Images/eticket.png'
 export default class TicketFormCustomer extends Component {
     render() {
         return (
             <div>
                 <Row>
                     <Col xs="8">
-                        <Card shadow>
+                        <Card shadow style={{paddingTop:"120px"}}>
                             <h5>Ticket Preview</h5>
-                            <Button>Preview</Button>
+                            <Button href={eticket} target="_blank">Preview</Button>
                         </Card>
                     </Col>
                 </Row>

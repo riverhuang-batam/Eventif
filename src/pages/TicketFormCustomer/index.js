@@ -18,7 +18,8 @@ export default class TicketFormCustomer extends Component {
         return (
             <HashRouter>
                 <div style={{
-                        paddingTop: "120px"
+                        paddingTop: "120px",
+                        backgroundColor:"#E5E5E5"
                     }}  >
 
                     <Row>
