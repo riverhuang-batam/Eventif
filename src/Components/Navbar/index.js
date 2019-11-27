@@ -47,7 +47,7 @@ export default class navbar extends Component {
                         width: "100%",
                         zIndex: "1030",
                         paddingBottom: '15',
-                        backgroundColor: "#0156B0"
+                        backgroundColor: "#FFA600"
                     }}
                         light
                         expand="md"
@@ -63,9 +63,9 @@ export default class navbar extends Component {
                                         color: "white"
                                     }}
                                         className="text-center">
-                                        <h4>
+                                        <a style={{fontWeight:"500", fontSize:"22px"}}>
                                             Home
-                                        </h4>
+                                        </a>
                                     </NavItem>
                                 </NavLink>
                                 <NavLink
@@ -75,32 +75,34 @@ export default class navbar extends Component {
                                     id="event"
                                     to="Createevent"
                                     activeStyle={{
-                                    color: 'red'
+                                    color: 'white'
                                 }}>
                                     <NavItem
                                         style={{
-                                        paddingRight: "30px"
+                                        paddingRight: "30px",
+                                        color:"white"
                                     }}
                                         className="text-center">
-                                        <h4>
+                                        <a style={{fontWeight:"500", fontSize:"22px", color:"white"}}>
                                             CreateEvent
-                                        </h4>
+                                        </a>
                                     </NavItem>
                                 </NavLink>
 
                                 <NavLink
                                     to="/Eventpages"
                                     activeStyle={{
-                                    color: 'red'
+                                      color:"white"
                                 }}>
                                     <NavItem
                                         style={{
-                                        paddingRight: "30px"
+                                        paddingRight: "30px",
+                                        color:"white"
                                     }}
                                         className="text-center">
-                                        <h4>
+                                        <a style={{fontWeight:"500", fontSize:"22px", color:"white"}}>
                                             Event
-                                        </h4>
+                                        </a>
                                     </NavItem>
                                 </NavLink>
                                 <NavLink
@@ -113,9 +115,9 @@ export default class navbar extends Component {
                                         paddingRight: "30px"
                                     }}
                                         className="text-center">
-                                        <h4>
+                                        <a style={{fontWeight:"500", fontSize:"22px", color:"white"}}>
                                             Login
-                                        </h4>
+                                        </a>
                                     </NavItem>
                                 </NavLink>
                             </Nav>

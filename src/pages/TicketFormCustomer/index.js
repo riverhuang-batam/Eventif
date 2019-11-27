@@ -22,62 +22,64 @@ export default class TicketFormCustomer extends Component {
                 <div style={{
                     paddingTop: "120px"
                 }}>
-                <Container>
-                    
-                            <Card shadow>
-                                <CardImg src={RuangKreasi} width="100%" height="300vw"/>
-                                <Table>
-                                    <thead>
-                                        <tr>
-                                            <th>Jenis Ticket</th>
-                                            <th>Harga per Ticket</th>
-                                            <th>Kuantitas</th>
-                                            <th>Jumlah</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Ticket Reguler</td>
-                                            <td>Rp. 30000</td>
-                                            <td>
-                                                <Input type="select" name="select">
-                                                    <option>1</option>
-                                                    <option>2</option>
-                                                    <option>3</option>
-                                                    <option>4</option>
-                                                    <option>5</option>
-                                                </Input>
-                                            </td>
-                                            <td>Rp. 0</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Ticket Spesial</td>
-                                            <td>Rp. 30000</td>
-                                            <td>
-                                                <Input type="select" name="select">
-                                                    <option>1</option>
-                                                    <option>2</option>
-                                                    <option>3</option>
-                                                    <option>4</option>
-                                                    <option>5</option>
-                                                </Input>
-                                            </td>
-                                            <td>Rp. 0</td>
-                                        </tr>
+                    <Container>
 
-                                    </tbody>
-                                </Table>
-                                        <Link to="TicketPaymentCustomer">
-                                            <Button block>Buy Ticket</Button>
-                                        </Link>
-                            </Card>
-                        
+                        <Card shadow>
+                            <CardImg src={RuangKreasi} width="100%" height="300vw"/>
+                            <Table>
+                                <thead>
+                                    <tr>
+                                        <th>Jenis Ticket</th>
+                                        <th>Harga per Ticket</th>
+                                        <th>Kuantitas</th>
+                                        <th>Jumlah</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Ticket Reguler</td>
+                                        <td>Rp. 30000</td>
+                                        <td>
+                                            <Input type="select" name="select">
+                                                <option>0</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </Input>
+                                        </td>
+                                        <td>Rp. 0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ticket Spesial</td>
+                                        <td>Rp. 30000</td>
+                                        <td>
+                                            <Input type="select" name="select">
+                                                <option>0</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </Input>
+                                        </td>
+                                        <td>Rp. 0</td>
+                                    </tr>
+
+                                </tbody>
+                            </Table>
+                            <Link to="TicketPaymentCustomer">
+                                <Button block>Buy Ticket</Button>
+                            </Link>
+                        </Card>
+
                     </Container>
                 </div>
                 <Switch>
                     <Route path="TicketPaymentCustomer" component={TicketPaymentCustomer}/>
                 </Switch>
-                
+
             </HashRouter>
         )
     }

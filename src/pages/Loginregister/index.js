@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {Container} from 'reactstrap'
+import {Container, Button} from 'reactstrap'
 import {Switch, Route, HashRouter, Link} from 'react-router-dom'
 import Loginpages from './../Loginpages'
 import Registerpages from './../Registerpages'
@@ -16,10 +16,12 @@ export default class LoginRegister extends Component {
                     }}>
 
                         <Link to="/Loginregister/">
-                            <a>Login</a>
+                            <Button>
+                            <a style={{borderBottomColor:"red", borderBottom:"1px", fontSize:"30px"}}>Login</a>
+                            </Button>
                         </Link>
                         <Link to="/Loginregister/Registerpages">
-                            <a>Register</a>
+                            <a style={{fontSize:"30px", fontWeight:"500"}}>Register</a>
                         </Link>
 
                     </div>

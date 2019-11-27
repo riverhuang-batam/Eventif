@@ -9,14 +9,15 @@ import {
     Row,
     Col
 } from 'reactstrap'
+import eventiflogo from '../../Images/Logoeventifv2(black).png'
 export default class Search extends Component {
     render() {
         return (
             <div>
                 <Container style={{paddingTop:"80px"}}>
                     <Row>
-                        <Col md="8" style={{paddingTop:"7%"}}>
-                            <h1>EventIF</h1>
+                        <Col md="8" style={{paddingTop:"4%"}}>
+                            <img src={eventiflogo} width="150px" className="mb-4"/>
                             <h3>Find your wanted event here and get your skill and certificate for better future</h3>
                         </Col>
                         <Col md="4"  >
