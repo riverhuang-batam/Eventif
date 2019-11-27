@@ -46,7 +46,7 @@ export default class TicketPaymentCustomer extends Component {
                     }}>
                 <Container>
 
-                    <Card>
+                    <Card className="shadow">
                     <Container>
                         <div className="text-center">
                             
@@ -83,6 +83,7 @@ export default class TicketPaymentCustomer extends Component {
                 <Modal
                 isOpen={this.state.modal}
                 toggle={this.toggle}
+                className="shadow"
                 >
                     <ModalHeader
                     toggle={this.toggle}

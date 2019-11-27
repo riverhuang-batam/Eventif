@@ -15,10 +15,10 @@ export default class Whatsnew extends Component {
             <div>
                 <Container className="mt-4">
                     <h2>What's New?</h2>
-                    <Row className="mt-4">
+                    <Row>
                         <Col md="3">
 
-                            <Card>
+                            <Card className="mt-4">
                                 <CardImg top width="100%" src={events3}/>
                                 <CardBody>
                                     <h1>Title</h1>
@@ -33,7 +33,7 @@ export default class Whatsnew extends Component {
                         </Col>
                         <Col md="3">
 
-                            <Card>
+                            <Card className="mt-4">
                                 <CardImg top width="100%" src={events3}/>
                                 <CardBody>
                                     <h1>Title</h1>
@@ -48,7 +48,7 @@ export default class Whatsnew extends Component {
                         </Col>
                         <Col md="3">
 
-                            <Card>
+                            <Card className="mt-4">
                                 <CardImg top width="100%" src={events3}/>
                                 <CardBody>
                                     <h1>Title</h1>
@@ -63,7 +63,7 @@ export default class Whatsnew extends Component {
                         </Col>
                         <Col md="3">
 
-                            <Card>
+                            <Card className="mt-4">
                                 <CardImg top width="100%" src={events3}/>
                                 <CardBody>
                                     <h1>Title</h1>

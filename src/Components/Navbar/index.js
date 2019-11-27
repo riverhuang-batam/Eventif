@@ -7,6 +7,7 @@ import {
     NavItem,
     Collapse,
     Container
+    
 } from 'reactstrap'
 import {Route, Switch, HashRouter, NavLink} from 'react-router-dom'
 import Home from './../../pages/Home'
@@ -53,7 +54,11 @@ export default class navbar extends Component {
                         expand="md"
                         className="mb-4">
                         <NavbarBrand href='/'><img src={eventiflogo_light} width="80px"/></NavbarBrand>
-                        <NavbarToggler onClick={this.toggle}/>
+                        <NavbarToggler onClick={this.toggle} style={{borderColor:"white"}}>
+                          <h3 style={{color:"white"}}>
+                          Menu
+                          </h3>
+                          </NavbarToggler>
                         <Collapse isOpen={this.state.isOpen} navbar>
                             <Nav className="ml-auto" navbar>
                                 <NavLink to="/">

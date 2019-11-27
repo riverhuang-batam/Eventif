@@ -24,7 +24,7 @@ export default class TicketFormCustomer extends Component {
                 }}>
                     <Container>
 
-                        <Card shadow>
+                        <Card className="shadow">
                             <CardImg src={RuangKreasi} width="100%" height="300vw"/>
                             <Table>
                                 <thead>
