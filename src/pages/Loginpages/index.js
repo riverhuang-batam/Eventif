@@ -42,8 +42,11 @@ export default class Loginpages extends Component {
                                         <FormGroup>
                                             <Input type="password" placeholder="Password"/>
                                         </FormGroup>
-                                        <Button>Login</Button>
+                                        <Button body inverse color="warning" style={{color:"white"}} block >Login</Button>
                                     </Form>
+                                    <div className="text-center">
+                                        -------OR--------
+                                    </div>
                                     <Login/>
                                 </CardBody>
                             </Container>

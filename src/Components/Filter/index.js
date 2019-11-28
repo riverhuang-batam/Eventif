@@ -11,6 +11,7 @@ export default class Filter extends Component {
                     <FormGroup>
                         <Label >Select</Label>
                         <Input type="select" name="select">
+                            <option>Filter</option>
                             <option>Certificated</option>
                             <option>Free</option>
                             <option>2 hour event times</option>

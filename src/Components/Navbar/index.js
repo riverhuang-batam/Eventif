@@ -48,7 +48,7 @@ export default class navbar extends Component {
                         width: "100%",
                         zIndex: "1030",
                         paddingBottom: '15',
-                        backgroundColor: "#FFA600"
+                        backgroundColor: "rgb(57,54,79)"
                     }}
                         light
                         expand="md"

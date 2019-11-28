@@ -26,7 +26,7 @@ export default class Registerpages extends Component{
                                 <Input type="password" placeholder="Password"/>
                             </FormGroup>
                             <FormGroup>
-                                <Button>Register</Button>
+                                <Button body inverse color="warning" style={{color:"white"}} block>Register</Button>
                             </FormGroup>
                             
                         </Form>

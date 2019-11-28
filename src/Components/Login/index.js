@@ -29,21 +29,26 @@ export default class Login extends Component {
             this.signup(response, 'google')
         }
         return (
-            <div>
-                
+            
+            <div className="text-center">    
             <FacebookLogin
             appId="1744224152377603"
             redirectUri="http://localhost:3000"
             autoLoad={true}
             fields="name,email,picture"
             onClick={this.componentClicked}
-            callback={this.responseFacebook}/>
+            callback={this.responseFacebook}
+            
+            />
+            <div className="mt-4">
             <GoogleLogin
                 clientId="184541897347-eqqoanb3jk9q9trkjl02frc0uelvrbe8.apps.googleusercontent.com"
-                buttonText="Login"
+                buttonText="LOGIN WITH GOOGLE"
                 onSuccess={responseGoogle}
                 onFailure={responseGoogle}/>
-            </div>
+                </div>
+                </div>
+            
         )
     }
 }

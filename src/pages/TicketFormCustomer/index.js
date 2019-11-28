@@ -70,7 +70,7 @@ export default class TicketFormCustomer extends Component {
                                 </tbody>
                             </Table>
                             <Link to="TicketPaymentCustomer">
-                                <Button block>Buy Ticket</Button>
+                                <Button body inverse color="warning" style={{color:"white"}} block>Buy Ticket</Button>
                             </Link>
                         </Card>
 

@@ -34,7 +34,7 @@ export default class Search extends Component {
                             <Input type="text" placeholder="About"></Input>
                             </FormGroup>
                             <FormGroup>
-                            <Button>
+                            <Button body inverse color="warning" style={{color:"white"}}>
                                 Search
                             </Button>
                             </FormGroup>

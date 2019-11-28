@@ -76,7 +76,7 @@ export default class TicketPaymentCustomer extends Component {
                         </p>
                         
                         </Container>
-                        <Button body inverse color="success"onClick={this.toggle}>Pay</Button>
+                        <Button body inverse color="warning" style={{color:"white"}} onClick={this.toggle}>Pay</Button>
                         
                     </Card>
                 </Container>
@@ -125,9 +125,9 @@ export default class TicketPaymentCustomer extends Component {
                     </ModalBody>
                     <ModalFooter>
                         <Link to="/TicketPdfCustomer">
-                            <Button onClick={this.toggle}>OK</Button>
+                            <Button body inverse color="warning" style={{color:"white"}} onClick={this.toggle}>OK</Button>
                             </Link>
-                            <Button onClick={this.toggle}>Cancel</Button>
+                            <Button body inverse color="danger" onClick={this.toggle}>Cancel</Button>
                     </ModalFooter>
                 </Modal>
             </div>
