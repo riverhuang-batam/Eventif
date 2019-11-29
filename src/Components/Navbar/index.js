@@ -22,6 +22,7 @@ import TicketPdfCustomer from '../../pages/TicketPdfCustomer'
 import TicketCreate from '../../pages/TicketCreate'
 import eventiflogo_dark from '../../Images/Logoeventifv2(black).png'
 import eventiflogo_light from '../../Images/eventiflogo(light).png'
+import eventiflogo from '../../Images/eventiflogo.png'
 export default class navbar extends Component {
     constructor(props) {
         super(props);
@@ -48,12 +49,12 @@ export default class navbar extends Component {
                         width: "100%",
                         zIndex: "1030",
                         paddingBottom: '15',
-                        backgroundColor: "rgb(57,54,79)"
+                        backgroundColor: "#FFA600"
                     }}
                         light
                         expand="md"
                         className="mb-4">
-                        <NavbarBrand href='/'><img src={eventiflogo_light} width="80px"/></NavbarBrand>
+                        <NavbarBrand href='/'><img src={eventiflogo} width="80px"/></NavbarBrand>
                         <NavbarToggler onClick={this.toggle} style={{borderColor:"white"}}>
                           <h3 style={{color:"white"}}>
                           Menu

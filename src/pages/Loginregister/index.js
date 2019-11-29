@@ -68,9 +68,8 @@ export default class LoginRegister extends Component {
 
                     </div>
                     <div
-                        style={{
-                        backgroundColor: "#E5E5E5"
-                    }}>
+                      className="mb-4">
+                        
                         <Switch>
 
                             <Route exact path="/Loginregister/" component={Loginpages}/>
