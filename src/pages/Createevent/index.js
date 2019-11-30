@@ -11,7 +11,7 @@ import {
     Label
 } from 'reactstrap'
 import {HashRouter, Switch, Route, Link} from 'react-router-dom'
-import TicketCreate from '../TicketCreate'
+import eventif from '../../App'
 import wallpapercreateevent from '../../Images/wallpapercreateevent.jpg'
 import Loginpages from './../Loginpages'
 
@@ -120,7 +120,7 @@ export default class Createevent extends Component {
                                             <Input type="textarea" placeholder="your event description"/>
                                         </FormGroup>
                                         <FormGroup>
-                                            <Link to="TicketCreate">
+                                            <Link to="/">
                                                 <Button block body inverse color="warning" style={{color:"white"}}>Create Event</Button>
                                             </Link>
                                         </FormGroup>
@@ -132,7 +132,7 @@ export default class Createevent extends Component {
                         </Col>
                     </Row>
                     <Switch>
-                        <Route path="TicketCreate" Component={TicketCreate}/>
+                        <Route path="/" Component={eventif}/>
                     </Switch>
                 </HashRouter>
             </div>

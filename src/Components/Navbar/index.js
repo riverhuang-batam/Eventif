@@ -13,7 +13,6 @@ import {Route, Switch, HashRouter, NavLink} from 'react-router-dom'
 import Home from './../../pages/Home'
 import Createevent from '../../pages/Createevent'
 import Eventpages from './../../pages/Eventpages'
-import Loginregister from './../../pages/Loginregister'
 import Registerpages from '../../pages/Registerpages';
 import Loginpages from '../../pages/Loginpages';
 import TicketFormCustomer from '../../pages/TicketFormCustomer'
@@ -112,7 +111,7 @@ export default class navbar extends Component {
                                     </NavItem>
                                 </NavLink>
                                 <NavLink
-                                    to="/Loginregister"
+                                    to="/Loginpages"
                                     activeStyle={{
                                     color: 'red'
                                 }}>
@@ -137,7 +136,7 @@ export default class navbar extends Component {
                     <Switch >
                         <Route exact path="/" component={Home}/>
                         <Route exact path="/Eventpages" component={Eventpages}/>
-                        <Route path="/Loginregister" component={Loginregister}/>
+                        
                         <Route path="/Createevent" component={Createevent}/>
                         <Route path="/Registerpages" component={Registerpages}/>
                         <Route path="/Loginpages" component={Loginpages}/>

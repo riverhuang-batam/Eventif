@@ -40,7 +40,7 @@ export default class Login extends Component {
             callback={this.responseFacebook}
             
             />
-            <div className="mt-4">
+            <div className="mt-2">
             <GoogleLogin
                 clientId="184541897347-eqqoanb3jk9q9trkjl02frc0uelvrbe8.apps.googleusercontent.com"
                 buttonText="LOGIN WITH GOOGLE"

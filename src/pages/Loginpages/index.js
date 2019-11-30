@@ -10,8 +10,10 @@ import {
     Row,
     Col
 } from 'reactstrap'
+import {HashRouter, Switch, Route, Link} from 'react-router-dom'
 import Login from './../../Components/Login'
 import Logoeventif from './../../Images/Logoeventifv2(black).png'
+import Registerpages from '../Registerpages'
 
 export default class Loginpages extends Component {
     componentClicked = () => {
@@ -22,9 +24,11 @@ export default class Loginpages extends Component {
     render() {
         
         return (
-            <div style={{backgroundColor:"#E5E5E5"}}>
+            <HashRouter>
+                <Container>
+            <div style={{paddingTop:"100px"}}>
                 <Row>
-                    <Container>
+                    
                     <Col
                         sm="12"
                         md={{
@@ -37,7 +41,7 @@ export default class Loginpages extends Component {
 
                                 <Container>
                                     <div className="text-center mt-4 mb-4">
-                                        <img top width="46%" src={Logoeventif}/>
+                                        <img top width="55%" src={Logoeventif}/>
                                     </div>
                                 </Container>
                                 <CardBody>
@@ -54,13 +58,26 @@ export default class Loginpages extends Component {
                                         Or continue with your social account
                                     </div>
                                     <Login/>
+                                    <div className="text-center mt-2">
+                                    Don't have an account?
+                                    <span >
+                                        <Link to="Registerpages">
+                                         Register
+                                         </Link>
+                                    </span>
+                                    </div>
                                 </CardBody>
                             </Container>
                         </Card>
                     </Col>
-                    </Container>
+                    
                 </Row>
             </div>
+            </Container>
+            <Switch >
+                <Route path="Registerpages" component={Registerpages}/>
+            </Switch>
+            </HashRouter>
         )
     }
 }
