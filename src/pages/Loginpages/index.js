@@ -14,7 +14,13 @@ import Login from './../../Components/Login'
 import Logoeventif from './../../Images/Logoeventifv2(black).png'
 
 export default class Loginpages extends Component {
+    componentClicked = () => {
+        console.log("Clicked");
+        document.getElementById('event').style.display = 'block'
+        window.location.hash = '/'
+    }
     render() {
+        
         return (
             <div style={{backgroundColor:"#E5E5E5"}}>
                 <Row>
@@ -42,7 +48,7 @@ export default class Loginpages extends Component {
                                         <FormGroup>
                                             <Input type="password" placeholder="Password"/>
                                         </FormGroup>
-                                        <Button body inverse color="warning" style={{color:"white"}} block >Login</Button>
+                                        <Button body inverse color="warning" onClick={this.componentClicked} style={{color:"white"}} block >Login</Button>
                                     </Form>
                                     <div className="text-center mt-2 mb-2">
                                         Or continue with your social account

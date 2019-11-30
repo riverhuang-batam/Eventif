@@ -15,36 +15,34 @@ export default class LoginRegister extends Component {
                         paddingTop: "120px",
                         backgroundColor: "#E5E5E5"
                     }}>
-                        <Row>
-                            <Col md={{offset: 4 }} >
+                        
                                 <Link to="/Loginregister/">
                             
-                                    <Button className="shadow">
+                                    <Button className="shadow" outline color="warning">
                                         <a
                                             style={{
                                             borderBottomColor: "red",
                                             borderBottom: "1px",
-                                            fontSize: "24px",
-                                            fontWeight: "400"
+                                            fontSize: "20px",
+                                            fontWeight: "400",
+                                            
                                         }}>Login</a>
-                                    </Button>
+                                    </Button>{' '}
                                 </Link>
                             
                                 <Link to="/Loginregister/Registerpages">
-                                    <Button className="shadow">
+                                    <Button className="shadow" outline color="warning">
                                         <a
                                             style={{
-                                            fontSize: "24px",
+                                            fontSize: "20px",
                                             fontWeight: "400"
                                         }}>Register</a>
                                     </Button>
 
                                 </Link>
-                            </Col>
+                                </div>
 
-                        </Row>
-
-                    </div>
+                    
                     <div
                       className="mb-4">
                         
