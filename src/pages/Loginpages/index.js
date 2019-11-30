@@ -39,11 +39,11 @@ export default class Loginpages extends Component {
                         <Card className="shadow">
                             <Container>
 
-                                <Container>
+                                
                                     <div className="text-center mt-4 mb-4">
                                         <img top width="55%" src={Logoeventif}/>
                                     </div>
-                                </Container>
+                                
                                 <CardBody>
                                     <Form>
                                         <FormGroup>

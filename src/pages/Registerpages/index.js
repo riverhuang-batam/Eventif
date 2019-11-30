@@ -7,12 +7,13 @@ export default class Registerpages extends Component{
     render(){
         return(
             <HashRouter>
+                <Container>
             <div style={{paddingTop:"100px"}}>
                 <Row><Col sm="12" md={{size:"4", offset:"4"}}>
                 <Card className="shadow">
                     <Container>
                     <div className="text-center mt-4 mb-4">
-                    <img top src={logoeventif}width="40%"/>
+                    <img top src={logoeventif}width="55%"/>
                     </div>
                     </Container>
                     <CardBody>
@@ -50,6 +51,7 @@ export default class Registerpages extends Component{
             <Switch>
                 <Route path="Loginpages" component={Loginpages}/>
             </Switch>
+            </Container>
             </HashRouter>
         )
     }
