@@ -49,16 +49,18 @@ export default class Createevent extends Component {
                             paddingTop: "100px"
                         }}>
                             <Card className="shadow">
-                                <Label style={labelupload}>upload</Label>
-                                <Input type="file" style={styleupload}>file</Input>
+                                
                                 <CardBody>
                                     <Form>
                                         <FormGroup>
+                                            <Label>Event Title</Label>
                                             <Input type="text" placeholder="Nama Event" required></Input>
                                         </FormGroup>
+                                        
                                         <FormGroup>
-                                            <Input type="text" placeholder="Pilih Kategori Event" required></Input>
-                                        </FormGroup>
+                                        <Label>Post Image</Label>
+                                <Input type="file">file</Input>
+                                </FormGroup>
                                         <FormGroup>
                                             <Label >Category</Label>
                                             <Input type="select" name="select">
@@ -79,6 +81,7 @@ export default class Createevent extends Component {
                                             </Input>
                                         </FormGroup>
                                         <FormGroup>
+                                            <Label>Location</Label>
                                             <Input type="text" placeholder="Location" required></Input>
                                         </FormGroup>
                                         <Col xs="6">
@@ -107,17 +110,10 @@ export default class Createevent extends Component {
                                         <FormGroup>
                                             <Input type="text" placeholder="Payment Method" required></Input>
                                         </FormGroup>
-                                        <Row>
-                                            <Col>
-                                                <p className="text-center">Diselenggarakan Oleh</p>
-                                            </Col>
-                                            <Col>
-                                                <p className="text-center">Tanggal & Waktu</p>
-                                            </Col>
-                                            <Col>
-                                                <p className="text-center">Lokasi</p>
-                                            </Col>
-                                        </Row>
+                                        <FormGroup>
+                                            <Label>Organizer</Label>
+                                            <Input type="text" placeholder="Organizer"></Input>
+                                        </FormGroup>
 
                                         <FormGroup>
                                             <Label>Description</Label>
@@ -125,7 +121,7 @@ export default class Createevent extends Component {
                                         </FormGroup>
                                         <FormGroup>
                                             <Link to="TicketCreate">
-                                                <Button block body inverse color="success">Create Event</Button>
+                                                <Button block body inverse color="warning" style={{color:"white"}}>Create Event</Button>
                                             </Link>
                                         </FormGroup>
                                     </Form>

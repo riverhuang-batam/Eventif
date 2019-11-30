@@ -43,10 +43,10 @@ export default class Loginpages extends Component {
                                 <CardBody>
                                     <Form>
                                         <FormGroup>
-                                            <Input type="email" placeholder="E-Mail"></Input>
+                                            <Input type="email" placeholder="E-Mail" required></Input>
                                         </FormGroup>
                                         <FormGroup>
-                                            <Input type="password" placeholder="Password"/>
+                                            <Input type="password" placeholder="Password" required  />
                                         </FormGroup>
                                         <Button body inverse color="warning" onClick={this.componentClicked} style={{color:"white"}} block >Login</Button>
                                     </Form>
