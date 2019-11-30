@@ -9,7 +9,10 @@ import {
     Form,
     Button,
     Label,
-    Modal
+    Modal,
+    ModalHeader,
+    ModalBody,
+    ModalFooter
 } from 'reactstrap'
 import {HashRouter, Switch, Route, Link} from 'react-router-dom'
 import eventif from '../../App'
@@ -165,6 +168,17 @@ export default class Createevent extends Component {
                         <Route path="/" Component={eventif}/>
                     </Switch>
                 </HashRouter>
+                <Modal>
+                    <ModalHeader>
+
+                    </ModalHeader>
+                    <ModalBody>
+
+                    </ModalBody>
+                    <ModalFooter>
+
+                    </ModalFooter>
+                </Modal>
             </div>
         )
     }
