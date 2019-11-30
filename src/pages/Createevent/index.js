@@ -8,7 +8,8 @@ import {
     FormGroup,
     Form,
     Button,
-    Label
+    Label,
+    Modal
 } from 'reactstrap'
 import {HashRouter, Switch, Route, Link} from 'react-router-dom'
 import eventif from '../../App'
@@ -52,6 +53,7 @@ export default class Createevent extends Component {
                                 
                                 <CardBody>
                                     <Form>
+                                    
                                         <FormGroup>
                                             <Label>Event Title</Label>
                                             <Input type="text" placeholder="Nama Event" required></Input>
@@ -61,6 +63,8 @@ export default class Createevent extends Component {
                                         <Label>Post Image</Label>
                                 <Input type="file">file</Input>
                                 </FormGroup>
+                                <Row form>
+                                <Col md={6}>
                                         <FormGroup>
                                             <Label >Category</Label>
                                             <Input type="select" name="select">
@@ -73,6 +77,8 @@ export default class Createevent extends Component {
 
                                             </Input>
                                         </FormGroup>
+                                        </Col>
+                                        <Col md={6}>
                                         <FormGroup>
                                             <Label >Certificate</Label>
                                             <Input type="select" name="select">
@@ -80,36 +86,58 @@ export default class Createevent extends Component {
                                                 <option>Not Certificated</option>
                                             </Input>
                                         </FormGroup>
+                                        </Col>
+                                        <Col md={12}>
                                         <FormGroup>
                                             <Label>Location</Label>
-                                            <Input type="text" placeholder="Location" required></Input>
+                                            <Input type="textarea" placeholder="Location" required></Input>
                                         </FormGroup>
-                                        <Col xs="6">
+                                        </Col>
+                                        
+                                        <Col md={6}>
                                             <FormGroup>
+                                                <Label>Event Start</Label>
                                                 <Input type="date" required></Input>
                                             </FormGroup>
                                         </Col>
-                                        <Col xs="6">
+                                        <Col md={6}>
                                             <FormGroup>
+                                            <Label>Event End</Label>
                                                 <Input type="date" required></Input>
+
                                             </FormGroup>
-                                        </Col>
-                                        <Col xs="6">
+                                            </Col>
+                                        
+                                            
+                                            <Col md={6}>
                                             <FormGroup>
+                                            <Label>Start Time</Label>
                                                 <Input type="time" required></Input>
+                                                
                                             </FormGroup>
-                                        </Col>
-                                        <Col xs="6">
+                                            </Col>
+                                            <Col md={6}>
                                             <FormGroup>
+                                            <Label>End Time</Label>
                                                 <Input type="time" required></Input>
-                                            </FormGroup>
+                                        </FormGroup>
                                         </Col>
+                                        </Row>
                                         <FormGroup>
-                                            <Input type="text" placeholder="Payment Price" required></Input>
+                                            <Label>Ticket Price</Label>
+                                            <Input type="text" placeholder="Ticket Price" required></Input>
                                         </FormGroup>
                                         <FormGroup>
-                                            <Input type="text" placeholder="Payment Method" required></Input>
+                                            <Label>Max ticket per Transaction</Label>
+                                            <Input type="select" name="select">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </Input>
                                         </FormGroup>
+                                        
                                         <FormGroup>
                                             <Label>Organizer</Label>
                                             <Input type="text" placeholder="Organizer"></Input>
@@ -124,9 +152,11 @@ export default class Createevent extends Component {
                                                 <Button block body inverse color="warning" style={{color:"white"}}>Create Event</Button>
                                             </Link>
                                         </FormGroup>
+                                
                                     </Form>
 
                                 </CardBody>
+                                
                             </Card>
 
                         </Col>
