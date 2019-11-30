@@ -44,8 +44,8 @@ export default class Loginpages extends Component {
                                         </FormGroup>
                                         <Button body inverse color="warning" style={{color:"white"}} block >Login</Button>
                                     </Form>
-                                    <div className="text-center">
-                                        -------OR--------
+                                    <div className="text-center mt-2 mb-2">
+                                        Or continue with your social account
                                     </div>
                                     <Login/>
                                 </CardBody>

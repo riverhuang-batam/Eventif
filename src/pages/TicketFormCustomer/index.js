@@ -5,7 +5,6 @@ import {
     Col,
     Form,
     Input,
-    FormGroup,
     Table,
     Button,
     CardImg,
@@ -25,7 +24,29 @@ export default class TicketFormCustomer extends Component {
                     <Container>
 
                         <Card className="shadow">
-                            <CardImg src={RuangKreasi} width="100%" height="300vw"/>
+                            <CardImg src={RuangKreasi} width="100%" height="350vw"/>
+                            <Container>
+                                <h3>8 November</h3>
+                                
+                            <Row>
+                                <Col md="8">
+                                    <p>Deskripsi</p>
+                                    <p>Ayok Join Event "Bussiness with purpose"</p>
+                                </Col>
+                                <Col md="4">
+                                <p>Location:</p>
+                                <p>Batam, Ruang Kreasi</p>
+                                
+                                <p>Kategori Event:</p>
+                                <p>
+                                    Bussiness
+                                </p>
+                                <p>Date & Time:</p>
+                                <p>8 November</p>
+                                
+                                </Col>
+                            </Row>
+                            </Container>
                             <Table>
                                 <thead>
                                     <tr>
@@ -70,7 +91,14 @@ export default class TicketFormCustomer extends Component {
                                 </tbody>
                             </Table>
                             <Link to="TicketPaymentCustomer">
-                                <Button body inverse color="warning" style={{color:"white"}} block>Buy Ticket</Button>
+                                <Button
+                                    body
+                                    inverse
+                                    color="warning"
+                                    style={{
+                                    color: "white"
+                                }}
+                                    block>Buy Ticket</Button>
                             </Link>
                         </Card>
 
