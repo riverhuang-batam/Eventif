@@ -89,7 +89,7 @@ export default class navbar extends Component {
                                     }}
                                         className="text-center">
                                         <a style={{fontWeight:"500", fontSize:"22px", color:"white"}}>
-                                            CreateEvent
+                                            Create Event
                                         </a>
                                     </NavItem>
                                 </NavLink>
