@@ -17,7 +17,9 @@ import {
 import {HashRouter, Switch, Route, Link} from 'react-router-dom'
 import eventif from '../../App'
 import wallpapercreateevent from '../../Images/wallpapercreateevent.jpg'
-import Loginpages from './../Loginpages'
+import FreeTicket from '../../Components/FreeTicket'
+import CashTicket from '../../Components/CashTicket'
+
 
 export default class Createevent extends Component {
     render() {
@@ -77,7 +79,6 @@ export default class Createevent extends Component {
                                                 <option>Japan</option>
                                                 <option>Food</option>
                                                 <option>Academy</option>
-
                                             </Input>
                                         </FormGroup>
                                         </Col>
@@ -125,11 +126,13 @@ export default class Createevent extends Component {
                                                 <Input type="time" required></Input>
                                         </FormGroup>
                                         </Col>
-                                        </Row>
+                                        
                                         <FormGroup>
-                                            <Label>Ticket Price</Label>
-                                            <Input type="text" placeholder="Ticket Price" required></Input>
+                                            <Label>Ticket Category</Label>
+                                            <FreeTicket/>
+                                            <CashTicket/>
                                         </FormGroup>
+                                        </Row>
                                         <FormGroup>
                                             <Label>Max ticket per Transaction</Label>
                                             <Input type="select" name="select">
