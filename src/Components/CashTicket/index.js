@@ -62,7 +62,7 @@ export default class CashTicket extends Component {
                         </FormGroup>
                         <FormGroup>
                             <Label>Ticket Price</Label>
-                            <Input type="number" placeholder="Rp. 1000">1000</Input>
+                            <Input type="number" placeholder="Rp. 10000">10000</Input>
                         </FormGroup>
                         <FormGroup>
 
@@ -101,7 +101,7 @@ export default class CashTicket extends Component {
                                                 style={{
                                                 color: "white"
                                             }}>
-                                                (Rp 0/tiket + Rp 3.000/transaksi)</p>
+                                                Rp 9.650/tiket terjual - Rp 3.000/transaksi</p>
                                         </Col>
                                     </Row>
                                 </Container>
