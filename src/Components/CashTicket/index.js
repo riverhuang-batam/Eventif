@@ -44,7 +44,7 @@ export default class CashTicket extends Component {
                     style={{
                     color: "white"
                 }}
-                    onClick={this.toggle}>
+                    onClick={this.toggle} block>
                     Cash Ticket
                 </Button>
                 <Modal isOpen={this.state.modal} toggle={this.toggle} className="shadow">

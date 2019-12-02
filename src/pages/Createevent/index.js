@@ -20,7 +20,6 @@ import wallpapercreateevent from '../../Images/wallpapercreateevent.jpg'
 import FreeTicket from '../../Components/FreeTicket'
 import CashTicket from '../../Components/CashTicket'
 
-
 export default class Createevent extends Component {
     render() {
         const styleupload = {
@@ -55,83 +54,104 @@ export default class Createevent extends Component {
                             paddingTop: "100px"
                         }}>
                             <Card className="shadow">
-                                
+
                                 <CardBody>
                                     <Form>
-                                    
+
                                         <FormGroup>
                                             <Label>Event Title</Label>
                                             <Input type="text" placeholder="Nama Event" required></Input>
                                         </FormGroup>
-                                        
-                                        <FormGroup>
-                                        <Label>Post Image</Label>
-                                <Input type="file">file</Input>
-                                </FormGroup>
-                                <Row form>
-                                <Col md={6}>
-                                        <FormGroup>
-                                            <Label >Category</Label>
-                                            <Input type="select" name="select">
-                                                <option>Category</option>
-                                                <option>Business</option>
-                                                <option>Game</option>
-                                                <option>Japan</option>
-                                                <option>Food</option>
-                                                <option>Academy</option>
-                                            </Input>
-                                        </FormGroup>
-                                        </Col>
-                                        <Col md={6}>
-                                        <FormGroup>
-                                            <Label >Certificate</Label>
-                                            <Input type="select" name="select">
-                                                <option>Certificated</option>
-                                                <option>Not Certificated</option>
-                                            </Input>
-                                        </FormGroup>
-                                        </Col>
-                                        <Col md={12}>
-                                        <FormGroup>
-                                            <Label>Location</Label>
-                                            <Input type="textarea" placeholder="Location" required></Input>
-                                        </FormGroup>
-                                        </Col>
-                                        
-                                        <Col md={6}>
-                                            <FormGroup>
-                                                <Label>Event Start</Label>
-                                                <Input type="date" required></Input>
-                                            </FormGroup>
-                                        </Col>
-                                        <Col md={6}>
-                                            <FormGroup>
-                                            <Label>Event End</Label>
-                                                <Input type="date" required></Input>
 
-                                            </FormGroup>
-                                            </Col>
-                                        
-                                            
-                                            <Col md={6}>
-                                            <FormGroup>
-                                            <Label>Start Time</Label>
-                                                <Input type="time" required></Input>
-                                                
-                                            </FormGroup>
-                                            </Col>
-                                            <Col md={6}>
-                                            <FormGroup>
-                                            <Label>End Time</Label>
-                                                <Input type="time" required></Input>
-                                        </FormGroup>
-                                        </Col>
-                                        
                                         <FormGroup>
-                                            <Label>Ticket Category</Label>
-                                            <FreeTicket/>
-                                            <CashTicket/>
+                                            <Label>Post Image</Label>
+                                            <Input type="file">file</Input>
                                         </FormGroup>
+                                        <Row form>
+                                            <Col md={6}>
+                                                <FormGroup>
+                                                    <Label >Category</Label>
+                                                    <Input type="select" name="select">
+                                                        <option>Category</option>
+                                                        <option>Business</option>
+                                                        <option>Game</option>
+                                                        <option>Japan</option>
+                                                        <option>Food</option>
+                                                        <option>Academy</option>
+                                                    </Input>
+                                                </FormGroup>
+                                            </Col>
+                                            <Col md={6}>
+                                                <FormGroup>
+                                                    <Label >Certificate</Label>
+                                                    <Input type="select" name="select">
+                                                        <option>Certificated</option>
+                                                        <option>Not Certificated</option>
+                                                    </Input>
+                                                </FormGroup>
+                                            </Col>
+                                            <Col md={12}>
+                                                <FormGroup>
+                                                    <Label>Location</Label>
+                                                    <Input type="textarea" placeholder="Location" required></Input>
+                                                </FormGroup>
+                                            </Col>
+
+                                            <Col md={6}>
+                                                <FormGroup>
+                                                    <Label>Event Start</Label>
+                                                    <Input type="date" required></Input>
+                                                </FormGroup>
+                                            </Col>
+                                            <Col md={6}>
+                                                <FormGroup>
+                                                    <Label>Event End</Label>
+                                                    <Input type="date" required></Input>
+
+                                                </FormGroup>
+                                            </Col>
+
+                                            <Col md={6}>
+                                                <FormGroup>
+                                                    <Label>Start Time</Label>
+                                                    <Input type="time" required></Input>
+
+                                                </FormGroup>
+                                            </Col>
+                                            <Col md={6}>
+                                                <FormGroup>
+                                                    <Label>End Time</Label>
+                                                    <Input type="time" required></Input>
+                                                </FormGroup>
+                                            </Col>
+                                            <Col md={12}>
+                                            <FormGroup>
+                                                <Label>Ticket Category</Label>
+                                            </FormGroup>
+                                            </Col>
+                                            <Col md={6}>
+
+                                                <FormGroup>
+
+                                                    <Card>
+
+                                                        <h5 className="text-center">Free Ticket</h5>
+                                                        <p>Free Ticket is where people get a free Ticket. there is no fee in making a event with a free ticket so EventIF won't take any fee from that</p>
+                                                        <FreeTicket/>
+                                                    </Card>
+
+                                                </FormGroup>
+                                            </Col>
+                                            <Col md={6}>
+                                                <FormGroup>
+                                                    <Card>
+                                                        <h5 className="text-center">Cash Ticket</h5>
+                                                        <p>Cash Ticket is a ticket where the people buy your ticket but there is Fee for the EventIF if you want make your event a with Cash
+                                                            Ticket</p>
+                                                        <CashTicket/>
+                                                    </Card>
+                                                </FormGroup>
+                                            </Col>
                                         </Row>
                                         <FormGroup>
                                             <Label>Max ticket per Transaction</Label>
@@ -143,7 +163,7 @@ export default class Createevent extends Component {
                                                 <option>5</option>
                                             </Input>
                                         </FormGroup>
-                                        
+
                                         <FormGroup>
                                             <Label>Organizer</Label>
                                             <Input type="text" placeholder="Organizer"></Input>
@@ -155,14 +175,21 @@ export default class Createevent extends Component {
                                         </FormGroup>
                                         <FormGroup>
                                             <Link to="/">
-                                                <Button block body inverse color="warning" style={{color:"white"}}>Create Event</Button>
+                                                <Button
+                                                    block
+                                                    body
+                                                    inverse
+                                                    color="warning"
+                                                    style={{
+                                                    color: "white"
+                                                }}>Create Event</Button>
                                             </Link>
                                         </FormGroup>
-                                
+
                                     </Form>
 
                                 </CardBody>
-                                
+
                             </Card>
 
                         </Col>
@@ -172,15 +199,9 @@ export default class Createevent extends Component {
                     </Switch>
                 </HashRouter>
                 <Modal>
-                    <ModalHeader>
-
-                    </ModalHeader>
-                    <ModalBody>
-
-                    </ModalBody>
-                    <ModalFooter>
-
-                    </ModalFooter>
+                    <ModalHeader></ModalHeader>
+                    <ModalBody></ModalBody>
+                    <ModalFooter></ModalFooter>
                 </Modal>
             </div>
         )
