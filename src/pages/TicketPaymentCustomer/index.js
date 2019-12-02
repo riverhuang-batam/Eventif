@@ -92,32 +92,32 @@ export default class TicketPaymentCustomer extends Component {
                     </ModalHeader>
                     <ModalBody>
                     <FormGroup check inline>
-                                    <Input type="checkbox" inline/>
+                                    <Input type="radio" name="customRadio" inline/>
                                     <img src={Bca} width="200px"/>
                                 </FormGroup>
                             
                                 <FormGroup check inline>
-                                    <Input type="checkbox"/>
+                                    <Input type="radio" name="customRadio"/>
                                     <img src={Bri} width="200px"/>
                                 </FormGroup>
                             
                                 <FormGroup check inline>
-                                    <Input type="checkbox"/>
+                                    <Input type="radio" name="customRadio"/>
                                     <img src={Bni} width="200px"/>
                                 </FormGroup>
                             
                                 <FormGroup check inline>
-                                    <Input type="checkbox"/>
+                                    <Input type="radio" name="customRadio"/>
                                     <img src={Gopay} width="200px"/>
                                 </FormGroup>
                             
                                 <FormGroup check inline>
-                                    <Input type="checkbox"/>
+                                    <Input type="radio" name="customRadio"/>
                                     <img src={Alfamart} width="200px"/>
                                 </FormGroup>
                             
                                 <FormGroup check inline>
-                                    <Input type="checkbox"/>
+                                    <Input type="radio" name="customRadio"/>
                                     <img src={Indomaret} width="200px"/>
                                 </FormGroup>
                             
