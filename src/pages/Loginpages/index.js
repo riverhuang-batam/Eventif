@@ -19,8 +19,11 @@ export default class Loginpages extends Component {
     componentClicked = () => {
         console.log("Clicked");
         document.getElementById('event').style.display = 'block'
+        document.getElementById('login').style.display = 'none'
+        document.getElementById('logout').style.display = 'block'
         window.location.hash = '/'
     }
+    
     render() {
         
         return (
