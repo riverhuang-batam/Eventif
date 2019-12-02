@@ -12,7 +12,8 @@ import {
     Modal,
     ModalHeader,
     ModalBody,
-    ModalFooter
+    ModalFooter,
+    Container
 } from 'reactstrap'
 import {HashRouter, Switch, Route, Link} from 'react-router-dom'
 import eventif from '../../App'
@@ -43,6 +44,7 @@ export default class Createevent extends Component {
         return (
             <div>
                 <HashRouter>
+                    <Container>
                     <Row>
                         <Col
                             sm="12"
@@ -197,6 +199,7 @@ export default class Createevent extends Component {
                     <Switch>
                         <Route path="/" Component={eventif}/>
                     </Switch>
+                    </Container>
                 </HashRouter>
                 <Modal>
                     <ModalHeader></ModalHeader>
