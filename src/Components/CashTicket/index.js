@@ -101,6 +101,39 @@ export default class CashTicket extends Component {
                                                 style={{
                                                 color: "white"
                                             }}>
+                                                
+(Rp 350/tiket + Rp 3.000/transaksi)</p>
+                                        </Col>
+                                        <Col md="5">
+                                            <p
+                                                style={{
+                                                color: "white",
+                                                borderBottomColor: "1px solid white"
+                                            }}>
+                                                Pembeli akan membayar
+                                            </p>
+                                        </Col>
+                                        <Col md="7">
+                                            <p
+                                                style={{
+                                                color: "white"
+                                            }}>
+                                                Rp 10.000 + Rp 1.000/transaksi</p>
+                                        </Col>
+                                        <Col md="5">
+                                            <p
+                                                style={{
+                                                color: "white",
+                                                borderBottomColor: "1px solid white"
+                                            }}>
+                                                Kamu akan mendapatkan
+                                            </p>
+                                        </Col>
+                                        <Col md="7">
+                                            <p
+                                                style={{
+                                                color: "white"
+                                            }}>
                                                 Rp 9.650/tiket terjual - Rp 3.000/transaksi</p>
                                         </Col>
                                     </Row>

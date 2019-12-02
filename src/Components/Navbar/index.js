@@ -54,11 +54,7 @@ export default class navbar extends Component {
                         expand="md"
                         className="mb-4">
                         <NavbarBrand href='/'><img src={eventiflogo} width="80px"/></NavbarBrand>
-                        <NavbarToggler onClick={this.toggle} style={{borderColor:"white"}}>
-                          <h3 style={{color:"white"}}>
-                          Menu
-                          </h3>
-                          </NavbarToggler>
+                        <NavbarToggler onClick={this.toggle} style={{color:"white"}}/>
                         <Collapse isOpen={this.state.isOpen} navbar>
                             <Nav className="ml-auto" navbar>
                                 <NavLink to="/">

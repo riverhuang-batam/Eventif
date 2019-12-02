@@ -34,7 +34,6 @@ export default class Login extends Component {
             <FacebookLogin
             appId="1744224152377603"
             redirectUri="http://localhost:3000"
-            autoLoad={true}
             fields="name,email,picture"
             onClick={this.componentClicked}
             callback={this.responseFacebook}
