@@ -1,11 +1,11 @@
 import React,{Component} from 'react'
-import Eventslide from '../../Components/Eventslide'
+import Jumbotron from '../../Components/Jumbotron'
 import Whatsnew from '../../Components/Whatsnews'
 export default class Home extends Component{
     render(){
         return(
             <div>
-                <Eventslide/>
+                <Jumbotron/>
                 <Whatsnew/>
             </div>
         )

@@ -7,8 +7,7 @@ import {
     NavItem,
     Collapse,
     Container,
-    
-
+    Button
 } from 'reactstrap'
 import {Route, Switch, HashRouter, NavLink} from 'react-router-dom'
 import Home from './../../pages/Home'
@@ -23,7 +22,10 @@ import TicketCreate from '../../pages/TicketCreate'
 import eventiflogo_dark from '../../Images/Logoeventifv2(black).png'
 import eventiflogo_light from '../../Images/eventiflogo(light).png'
 import eventiflogo from '../../Images/eventiflogo.png'
+
+
 export default class navbar extends Component {
+    
     componentClickedlogout = () => {
         document
             .getElementById('login')
@@ -33,6 +35,11 @@ export default class navbar extends Component {
             .getElementById('logout')
             .style
             .display = 'none'
+            document
+            .getElementById('event')
+            .style
+            .display = 'none'
+            
         window.location.hash = '/'
     }
     constructor(props) {
@@ -53,9 +60,7 @@ export default class navbar extends Component {
 
         return (
             <HashRouter>
-                <div style={{
-                    backgroundColor: "#E5E5E5"
-                }}>
+                <div >
                     <Navbar
                         style={{
                         position: 'fixed',
@@ -63,7 +68,8 @@ export default class navbar extends Component {
                         width: "100%",
                         zIndex: "1030",
                         paddingBottom: '15',
-                        backgroundColor: "#FFA600"
+                        backgroundColor: "#FF9926",
+                        opacity:"0.9"
                     }}
                         light
                         expand="md"
@@ -86,7 +92,7 @@ export default class navbar extends Component {
                                         <a
                                             style={{
                                             fontWeight: "500",
-                                            fontSize: "22px"
+                                            fontSize: "18px",
                                         }}>
                                             Home
                                         </a>
@@ -110,7 +116,7 @@ export default class navbar extends Component {
                                         <a
                                             style={{
                                             fontWeight: "500",
-                                            fontSize: "22px",
+                                            fontSize: "18px",
                                             color: "white"
                                         }}>
                                             Create Event
@@ -132,7 +138,7 @@ export default class navbar extends Component {
                                         <a
                                             style={{
                                             fontWeight: "500",
-                                            fontSize: "22px",
+                                            fontSize: "18px",
                                             color: "white"
                                         }}>
                                             Event
@@ -151,14 +157,17 @@ export default class navbar extends Component {
                                         paddingRight: "30px"
                                     }}
                                         className="text-center">
+                                            
                                         <a
                                             style={{
                                             fontWeight: "500",
-                                            fontSize: "22px",
-                                            color: "white"
+                                            fontSize: "18px",
+                                            color: "white",
+                                            
                                         }}>
                                             Login
                                         </a>
+                                        
                                     </NavItem>
                                 </NavLink>
                                         <NavLink to="/" onClick={this.componentClickedlogout}>
@@ -172,7 +181,7 @@ export default class navbar extends Component {
                                     <a
                                         style={{
                                         fontWeight: "500",
-                                        fontSize: "22px",
+                                        fontSize: "18px",
                                         color: "white"
                                     }}>
                                         Logout
