@@ -17,11 +17,6 @@ import "slick-carousel/slick/slick-theme.css";
 export default class Whatsnew extends Component {
     render() {
         const settings = {
-            // className: "center",
-            // centerMode: true,
-            // slidesToShow: 3,
-            // slidesToScroll: 3,
-            // variableWidth:true,
             autoplay: true,
             autoplaySpeed: 1500,
             infinite: true,
@@ -41,16 +36,16 @@ export default class Whatsnew extends Component {
         {
           breakpoint: 600,
           settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            initialSlide: 3
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            initialSlide: 2
           }
         },
         {
           breakpoint: 480,
           settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3
+            slidesToShow: 2,
+            slidesToScroll: 2
           }
         }
       ]
