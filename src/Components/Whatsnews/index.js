@@ -146,6 +146,58 @@ export default class Whatsnew extends Component {
           </div>
         </Slider>         
         </Col>
+        <Col md="12">
+        <h2 className="mt-4 mb-4">More Events</h2>
+        </Col>
+        <Col md="3">
+          
+        <Card >
+                                <CardImg top width="100%" src={events3}/>
+                                <CardBody>
+                                    <h4>Title</h4>
+                                    <p>Date:</p>
+                                    <p>Location:</p>
+                                    <p>Fee:</p>
+                                    <Button body inverse color="danger">Join</Button>
+                                </CardBody>
+                            </Card>
+                            </Col>
+                            <Col md="3">
+        <Card >
+                                <CardImg top width="100%" src={events3}/>
+                                <CardBody>
+                                    <h4>Title</h4>
+                                    <p>Date:</p>
+                                    <p>Location:</p>
+                                    <p>Fee:</p>
+                                    <Button body inverse color="danger">Join</Button>
+                                </CardBody>
+                            </Card>
+                            </Col>
+                            <Col md="3">
+        <Card >
+                                <CardImg top width="100%" src={events3}/>
+                                <CardBody>
+                                    <h4>Title</h4>
+                                    <p>Date:</p>
+                                    <p>Location:</p>
+                                    <p>Fee:</p>
+                                    <Button body inverse color="danger">Join</Button>
+                                </CardBody>
+                            </Card>
+                            </Col>
+                            <Col md="3">
+        <Card >
+                                <CardImg top width="100%" src={events3}/>
+                                <CardBody>
+                                    <h4>Title</h4>
+                                    <p>Date:</p>
+                                    <p>Location:</p>
+                                    <p>Fee:</p>
+                                    <Button body inverse color="danger">Join</Button>
+                                </CardBody>
+                            </Card>
+                            </Col>
                     </Row>
                 </Container>
             </div>
