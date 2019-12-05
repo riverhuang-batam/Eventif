@@ -18,7 +18,7 @@ export default class Whatsnew extends Component {
     render() {
         const settings = {
             autoplay: true,
-            autoplaySpeed: 1500,
+            autoplaySpeed: 2500,
             infinite: true,
       speed: 500,
       slidesToShow: 3,
