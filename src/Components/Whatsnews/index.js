@@ -22,7 +22,7 @@ export default class Whatsnew extends Component {
             infinite: true,
       speed: 500,
       slidesToShow: 3,
-      slidesToScroll: 3,
+      slidesToScroll: 1,
       arrows:false,
       responsive: [
         {
@@ -72,7 +72,7 @@ export default class Whatsnew extends Component {
                     <Slider {...settings}>
           <div >
           
-<Card >
+<Card className="shadow">
                                 <CardImg top width="100%" src={events3}/>
                                 <CardBody>
                                     <h4>Title</h4>
@@ -85,7 +85,7 @@ export default class Whatsnew extends Component {
           
           </div>
           <div>
-          <Card >
+          <Card className="shadow">
                                 <CardImg top width="100%" src={events3}/>
                                 <CardBody>
                                     <h4>Title</h4>
@@ -97,7 +97,7 @@ export default class Whatsnew extends Component {
                             </Card>
           </div>
           <div>
-          <Card >
+          <Card className="shadow">
                                 <CardImg top width="100%" src={events3}/>
                                 <CardBody>
                                     <h4>Title</h4>
@@ -109,7 +109,7 @@ export default class Whatsnew extends Component {
                             </Card>
           </div>
           <div>
-          <Card>
+          <Card className="shadow">
                                 <CardImg top width="100%" src={events3}/>
                                 <CardBody>
                                     <h4>Title</h4>
@@ -121,7 +121,7 @@ export default class Whatsnew extends Component {
                             </Card>
           </div>
           <div>
-          <Card >
+          <Card className="shadow">
                                 <CardImg top width="100%" src={events3}/>
                                 <CardBody>
                                     <h4>Title</h4>
@@ -133,7 +133,7 @@ export default class Whatsnew extends Component {
                             </Card>
           </div>
           <div>
-          <Card >
+          <Card className="shadow">
                                 <CardImg top width="100%" src={events3}/>
                                 <CardBody>
                                     <h4>Title</h4>
@@ -151,7 +151,7 @@ export default class Whatsnew extends Component {
         </Col>
         <Col md="3">
           
-        <Card >
+        <Card className="shadow">
                                 <CardImg top width="100%" src={events3}/>
                                 <CardBody>
                                     <h4>Title</h4>
@@ -163,7 +163,7 @@ export default class Whatsnew extends Component {
                             </Card>
                             </Col>
                             <Col md="3">
-        <Card >
+        <Card className="shadow">
                                 <CardImg top width="100%" src={events3}/>
                                 <CardBody>
                                     <h4>Title</h4>
@@ -175,7 +175,7 @@ export default class Whatsnew extends Component {
                             </Card>
                             </Col>
                             <Col md="3">
-        <Card >
+        <Card className="shadow">
                                 <CardImg top width="100%" src={events3}/>
                                 <CardBody>
                                     <h4>Title</h4>
@@ -187,7 +187,7 @@ export default class Whatsnew extends Component {
                             </Card>
                             </Col>
                             <Col md="3">
-        <Card >
+        <Card className="shadow">
                                 <CardImg top width="100%" src={events3}/>
                                 <CardBody>
                                     <h4>Title</h4>
