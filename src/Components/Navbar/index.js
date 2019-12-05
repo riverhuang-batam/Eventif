@@ -209,7 +209,9 @@ export default class navbar extends Component {
                         <Route path="/TicketCreate" component={TicketCreate}/>
                     </Switch>
                 </div>
-                <p className="text-center mt-4 mb-4">copyright © Term|EventIF made by EventIF Team. All Rights Reserved.</p>
+                <footer style={{ bottom:"0"}}>
+                <p className="text-center mt-4 mb-4">copyright © 2019 by EventIF Team. All Rights Reserved.</p>
+                </footer>
             </HashRouter>
         );
     }

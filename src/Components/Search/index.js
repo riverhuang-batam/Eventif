@@ -18,7 +18,7 @@ export default class Search extends Component {
                     <Row>
                         <Col md="8" style={{paddingTop:"4%"}}>
                             <img src={eventiflogo_black} width="150px" className="mb-4"/>
-                            <h3>Find your wanted event here and get your skill and certificate for better future</h3>
+                            <h3>Find your wanted event here and get your skill and certificate for better future. Search for event here.</h3>
                         </Col>
                         <Col md="4"  >
                     <Card style={{postion:"absolute"}} className="shadow mt-4">
