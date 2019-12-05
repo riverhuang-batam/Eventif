@@ -7,7 +7,8 @@ export default class TicketPdfCustomer extends Component {
 
             <Container>
                 <div style={{
-                    paddingTop: "120px"
+                    paddingTop: "120px",
+                    paddingBottom:"40px"
                 }}>
 
                     <Card className="shadow">

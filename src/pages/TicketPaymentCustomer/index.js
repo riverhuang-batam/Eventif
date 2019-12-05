@@ -42,7 +42,7 @@ export default class TicketPaymentCustomer extends Component {
             <div style={{
                         paddingTop: "120px",
                         backgroundColor:"#E5E5E5",
-                        paddingBottom: "50px"
+                        paddingBottom: "140px"
                     }}>
                 <Container>
 
