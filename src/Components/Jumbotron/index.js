@@ -16,7 +16,7 @@ render() {
               <div className="text-center" style={{position:"relative", zIndex:"10"}}>
             <h2 style={{color:"white"}}>EventIF</h2>
               <h2 style={{color:"white"}}>
-              Search Event you want in EventIf website
+              Search Your Dream Event In EventIF website
               </h2>
               </div>
             </Jumbotron>
