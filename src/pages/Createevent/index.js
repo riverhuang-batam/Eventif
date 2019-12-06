@@ -137,10 +137,7 @@ export default class Createevent extends Component {
                                                     <FormGroup>
 
                                                         <Card>
-
                                                             <h5 className="text-center">Free Ticket</h5>
-                                                            <p>Free Ticket is where people get a free Ticket. there is no fee in making a
-                                                                event with a free ticket so EventIF won't take any fee from that</p>
                                                             <FreeTicket/>
                                                         </Card>
 
@@ -150,8 +147,6 @@ export default class Createevent extends Component {
                                                     <FormGroup>
                                                         <Card>
                                                             <h5 className="text-center">Paid Ticket</h5>
-                                                            <p>Paid Ticket is a ticket where the people buy your ticket but there is Fee for
-                                                                the EventIF if you want make your event a with Paid Ticket</p>
                                                             <PaidTicket/>
                                                         </Card>
                                                     </FormGroup>

@@ -177,7 +177,7 @@ export default class Eventinfo extends Component {
                             <h2>More Events</h2>
                         </Col>
                         <Col md="3">
-                        <Card className="shadow">
+                        <Card className="shadow mt-4">
                             <CardImg top width="100%" src={Ruangkreasi} alt={Ruangkreasi}></CardImg>
                             <CardBody>
                                 <h4>Title</h4>
@@ -194,7 +194,7 @@ export default class Eventinfo extends Component {
                         </Card>
                         </Col>
                         <Col md="3">
-                        <Card className="shadow">
+                        <Card className="shadow mt-4">
                             <CardImg top width="100%" src={Ruangkreasi} alt={Ruangkreasi}></CardImg>
                             <CardBody>
                                 <h4>Title</h4>
@@ -211,7 +211,7 @@ export default class Eventinfo extends Component {
                         </Card>
                         </Col>
                         <Col md="3">
-                        <Card className="shadow">
+                        <Card className="shadow mt-4">
                             <CardImg top width="100%" src={Ruangkreasi} alt={Ruangkreasi}></CardImg>
                             <CardBody>
                                 <h4>Title</h4>
@@ -228,7 +228,7 @@ export default class Eventinfo extends Component {
                         </Card>
                         </Col>
                         <Col md="3">
-                        <Card className="shadow">
+                        <Card className="shadow mt-4">
                             <CardImg top width="100%" src={Ruangkreasi} alt={Ruangkreasi}></CardImg>
                             <CardBody>
                                 <h4>Title</h4>

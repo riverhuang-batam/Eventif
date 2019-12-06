@@ -110,7 +110,7 @@ export default class PaidTicket extends Component {
                                                 color: "white",
                                                 borderBottomColor: "1px solid white"
                                             }}>
-                                                customer must pay
+                                                Customer must pay
                                             </p>
                                         </Col>
                                         <Col md="7">

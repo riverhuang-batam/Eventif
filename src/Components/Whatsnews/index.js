@@ -149,7 +149,7 @@ export default class Whatsnew extends Component {
                         </Col>
                         <Col md="3">
 
-                            <Card className="shadow">
+                            <Card className="shadow mt-4">
                                 <CardImg top width="100%" src={events3}/>
                                 <CardBody>
                                     <h4>Title</h4>
@@ -161,7 +161,7 @@ export default class Whatsnew extends Component {
                             </Card>
                         </Col>
                         <Col md="3">
-                            <Card className="shadow">
+                            <Card className="shadow mt-4">
                                 <CardImg top width="100%" src={events3}/>
                                 <CardBody>
                                     <h4>Title</h4>
@@ -173,7 +173,7 @@ export default class Whatsnew extends Component {
                             </Card>
                         </Col>
                         <Col md="3">
-                            <Card className="shadow">
+                            <Card className="shadow mt-4">
                                 <CardImg top width="100%" src={events3}/>
                                 <CardBody>
                                     <h4>Title</h4>
@@ -185,7 +185,7 @@ export default class Whatsnew extends Component {
                             </Card>
                         </Col>
                         <Col md="3">
-                            <Card className="shadow">
+                            <Card className="shadow mt-4">
                                 <CardImg top width="100%" src={events3}/>
                                 <CardBody>
                                     <h4>Title</h4>
