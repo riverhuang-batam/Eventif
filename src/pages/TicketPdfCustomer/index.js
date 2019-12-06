@@ -19,7 +19,7 @@ export default class TicketPdfCustomer extends Component {
                             <img src={eticket} width="50%"/>
                         </div>
                         <div className="text-center mb-4">
-                            <Button href={eticket} className="mt-4" body inverse color="primary" download>Download</Button>
+                            <Button href={eticket} className="mt-4" body inverse color="warning" style={{color:"white"}} download>Download</Button>
 
                         </div>
                     </Card>

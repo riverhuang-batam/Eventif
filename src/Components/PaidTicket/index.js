@@ -17,7 +17,7 @@ import {
 import EventIFLogo from './../../Images/Logoeventifv2(black).png'
 
 import {HashRouter, Route, Switch, Link} from 'react-router-dom'
-export default class CashTicket extends Component {
+export default class PaidTicket extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -45,10 +45,10 @@ export default class CashTicket extends Component {
                     color: "white"
                 }}
                     onClick={this.toggle} block>
-                    Cash Ticket
+                    Paid Ticket
                 </Button>
                 <Modal isOpen={this.state.modal} toggle={this.toggle} className="shadow">
-                    <ModalHeader toggle={this.toggle}>Cash Ticket
+                    <ModalHeader toggle={this.toggle}>Paid Ticket
 
                     </ModalHeader>
                     <ModalBody>
@@ -77,7 +77,7 @@ export default class CashTicket extends Component {
                                                 style={{
                                                 color: "white"
                                             }}>
-                                                Harga Tiket
+                                                Ticket Price
 
                                             </p>
                                         </Col>
@@ -102,7 +102,7 @@ export default class CashTicket extends Component {
                                                 color: "white"
                                             }}>
                                                 
-(Rp 350/tiket + Rp 3.000/transaksi)</p>
+(Rp 350/ticket + Rp 3.000/transaction)</p>
                                         </Col>
                                         <Col md="5">
                                             <p
@@ -110,7 +110,7 @@ export default class CashTicket extends Component {
                                                 color: "white",
                                                 borderBottomColor: "1px solid white"
                                             }}>
-                                                Pembeli akan membayar
+                                                customer must pay
                                             </p>
                                         </Col>
                                         <Col md="7">
@@ -124,9 +124,9 @@ export default class CashTicket extends Component {
                                             <p
                                                 style={{
                                                 color: "white",
-                                                borderBottomColor: "1px solid white"
+                                                
                                             }}>
-                                                Kamu akan mendapatkan
+                                                Your profit is
                                             </p>
                                         </Col>
                                         <Col md="7">

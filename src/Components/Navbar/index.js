@@ -210,7 +210,7 @@ export default class navbar extends Component {
                     </Switch>
                 </div>
                 <footer style={{ bottom:"0"}}>
-                <p className="text-center mt-4 mb-4">copyright © 2019 by EventIF Team. All Rights Reserved.</p>
+                <p className="text-center mt-4 mb-4">© 2019 by EventIF Team. All Rights Reserved.</p>
                 </footer>
             </HashRouter>
         );

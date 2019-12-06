@@ -58,9 +58,10 @@ export default class Whatsnew extends Component {
                         <Col md="4">
                             <div className="mb-4">
                                 <h2 className="text-center">What's New?</h2>
-                                <h5 className="mt-4">EventIF is use for manajemen ticket for bussiness. We are
-                                    the solution for entertaiment industry</h5>
-                                <h5 className="mt-4">More events coming to your town. Go join them now !
+                                <h5 className="mt-4">
+                                    More events coming to your town.
+                                </h5>
+                                <h5 className="mt-4">Go join them now !
                                 </h5>
                             </div>
                         </Col>

@@ -19,7 +19,7 @@ import {HashRouter, Switch, Route, Link} from 'react-router-dom'
 import eventif from '../../App'
 import wallpapercreateevent from '../../Images/wallpapercreateevent.jpg'
 import FreeTicket from '../../Components/FreeTicket'
-import CashTicket from '../../Components/CashTicket'
+import PaidTicket from '../../Components/PaidTicket'
 
 export default class Createevent extends Component {
     render() {
@@ -149,10 +149,10 @@ export default class Createevent extends Component {
                                                 <Col md={6}>
                                                     <FormGroup>
                                                         <Card>
-                                                            <h5 className="text-center">Cash Ticket</h5>
-                                                            <p>Cash Ticket is a ticket where the people buy your ticket but there is Fee for
-                                                                the EventIF if you want make your event a with Cash Ticket</p>
-                                                            <CashTicket/>
+                                                            <h5 className="text-center">Paid Ticket</h5>
+                                                            <p>Paid Ticket is a ticket where the people buy your ticket but there is Fee for
+                                                                the EventIF if you want make your event a with Paid Ticket</p>
+                                                            <PaidTicket/>
                                                         </Card>
                                                     </FormGroup>
                                                 </Col>
