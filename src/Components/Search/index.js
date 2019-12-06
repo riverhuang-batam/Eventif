@@ -17,11 +17,17 @@ export default class Search extends Component {
                 <Container style={{paddingTop:"80px"}}>
                     <Row>
                         <Col md="8" style={{paddingTop:"4%"}}>
-                            <img src={eventiflogo_black} width="150px" className="mb-4"/>
-                            <h3>Search for event here.</h3>
+                            
+                            <img src={eventiflogo_black} width="150px" className="mb-4" style={{position: "relative",
+                        zIndex: "10"}}/>
+                            <h2 style={{color:"white",
+                        position: "relative",
+                        zIndex: "10"}}>Search for event here.</h2>
+                            
                         </Col>
                         <Col md="4"  >
-                    <Card style={{postion:"absolute"}} className="shadow mt-4">
+                    <Card style={{postion:"absolute", position: "relative",
+                        zIndex: "10"}} className="shadow mt-4">
                         <Form>
                             <Container>
                             <FormGroup className="mt-4">
