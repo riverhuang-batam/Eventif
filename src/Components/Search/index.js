@@ -16,15 +16,17 @@ export default class Search extends Component {
             <div>
                 <Container style={{paddingTop:"80px"}}>
                     <Row>
-                        <Col md="8" style={{paddingTop:"4%"}}>
-                            
-                            <img src={eventiflogo_black} width="150px" className="mb-4" style={{position: "relative",
+                        
+                        <Col md="8" style={{paddingTop:"4%"}} className="mt-4">
+                        <Container>    
+                            <img src={eventiflogo_black} width="175px" className="mb-4" style={{position: "relative",
                         zIndex: "10"}}/>
                             <h2 style={{color:"white",
                         position: "relative",
                         zIndex: "10"}}>Search for event here.</h2>
-                            
+                        </Container>
                         </Col>
+                        
                         <Col md="4"  >
                     <Card style={{postion:"absolute", position: "relative",
                         zIndex: "10"}} className="shadow mt-4">

@@ -21,7 +21,7 @@ export default class Eventpages extends Component{
                         left: '0',
                         bottom: '0',
                         right: '0',
-                        opacity: '0.3',
+                        opacity: '0.25',
                         zIndex: "1"
                     }}></div>
                 <Search/>
