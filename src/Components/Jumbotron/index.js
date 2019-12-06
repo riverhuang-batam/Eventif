@@ -43,7 +43,7 @@ export default class Jumbotrons extends Component {
                             style={{
                             color: "white"
                         }}>
-                            EventIF Your dream event, delivered.
+                            Your dream event, delivered.
 
                         </h2>
                     </div>
