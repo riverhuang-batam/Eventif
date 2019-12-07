@@ -35,7 +35,7 @@ export default class Eventinfo extends Component {
             autoplaySpeed: 2500,
             
             speed: 500,
-            slidesToShow: 3,
+            slidesToShow: 4,
             slidesToScroll: 1,
             slidesPerRow: 1,
                         rows: 1,
@@ -44,7 +44,7 @@ export default class Eventinfo extends Component {
                 {
                     breakpoint: 1024,
                     settings: {
-                        slidesToShow: 3,
+                        slidesToShow: 4,
                         slidesToScroll: 1,
                         slidesPerRow: 1,
                         rows: 1,
@@ -77,14 +77,8 @@ export default class Eventinfo extends Component {
             <HashRouter>
                 <Container>
                     <Row>
-                        <Col md="4">
-                            <h2>Event</h2>
-                            <h5 className="mt-4">EventIF is use for manajemen ticket for bussiness. We are
-                                the solution for entertaiment industry</h5>
-                            <h5 className="mt-4">Join Event to gain more experience and get more certificate to improve your cv</h5>
-
-                        </Col>
-                        <Col md="8">
+                        
+                        <Col md="12">
                             <h3>Event List</h3>
                             <Slider {...settings}>
                                 <Card className="shadow" >
