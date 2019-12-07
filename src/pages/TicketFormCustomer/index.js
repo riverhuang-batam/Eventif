@@ -11,6 +11,7 @@ import {
     Container
 } from 'reactstrap';
 import RuangKreasi from '../../Images/Ruangkreasi.jpg'
+import events6 from '../../Images/events6.jpg'
 import {HashRouter, Route, Switch, Link} from 'react-router-dom'
 import TicketPaymentCustomer from '../TicketPaymentCustomer';
 
@@ -25,7 +26,7 @@ export default class TicketFormCustomer extends Component {
                     <Container>
 
                         <Card className="shadow">
-                            <CardImg src={RuangKreasi} width="100%" height="350vw"/>
+                            <CardImg src={events6} width="100%" height="400vw"/>
                             <Container>
                                 <h3>8 November</h3>
                                 
