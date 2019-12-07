@@ -9,6 +9,12 @@ import {
     Col
 } from 'reactstrap'
 import events3 from '../../Images/events3.jpg'
+import events4 from '../../Images/events4.jpg'
+import events5 from '../../Images/events5.jpg'
+import events6 from '../../Images/events6.jpg'
+import events7 from '../../Images/events7.jpg'
+import events8 from '../../Images/events8.jpeg'
+import events9 from '../../Images/events9.jpeg'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -71,7 +77,7 @@ export default class Whatsnew extends Component {
                                 <div >
 
                                     <Card className="shadow">
-                                        <CardImg top width="100%" src={events3}/>
+                                        <CardImg top width="100%" src={events4}/>
                                         <CardBody>
                                             <h4>Title</h4>
                                             <p>Date:</p>
@@ -84,7 +90,7 @@ export default class Whatsnew extends Component {
                                 </div>
                                 <div>
                                     <Card className="shadow">
-                                        <CardImg top width="100%" src={events3}/>
+                                        <CardImg top width="100%" src={events5}/>
                                         <CardBody>
                                             <h4>Title</h4>
                                             <p>Date:</p>
@@ -96,7 +102,7 @@ export default class Whatsnew extends Component {
                                 </div>
                                 <div>
                                     <Card className="shadow">
-                                        <CardImg top width="100%" src={events3}/>
+                                        <CardImg top width="100%" src={events7}/>
                                         <CardBody>
                                             <h4>Title</h4>
                                             <p>Date:</p>
@@ -108,7 +114,7 @@ export default class Whatsnew extends Component {
                                 </div>
                                 <div>
                                     <Card className="shadow">
-                                        <CardImg top width="100%" src={events3}/>
+                                        <CardImg top width="100%" src={events8}/>
                                         <CardBody>
                                             <h4>Title</h4>
                                             <p>Date:</p>
@@ -120,7 +126,7 @@ export default class Whatsnew extends Component {
                                 </div>
                                 <div>
                                     <Card className="shadow">
-                                        <CardImg top width="100%" src={events3}/>
+                                        <CardImg top width="100%" src={events6}/>
                                         <CardBody>
                                             <h4>Title</h4>
                                             <p>Date:</p>
@@ -132,7 +138,7 @@ export default class Whatsnew extends Component {
                                 </div>
                                 <div>
                                     <Card className="shadow">
-                                        <CardImg top width="100%" src={events3}/>
+                                        <CardImg top width="100%" src={events9}/>
                                         <CardBody>
                                             <h4>Title</h4>
                                             <p>Date:</p>
@@ -150,7 +156,7 @@ export default class Whatsnew extends Component {
                         <Col md="3">
 
                             <Card className="shadow mt-4">
-                                <CardImg top width="100%" src={events3}/>
+                                <CardImg top width="100%" src={events5}/>
                                 <CardBody>
                                     <h4>Title</h4>
                                     <p>Date:</p>
@@ -162,7 +168,7 @@ export default class Whatsnew extends Component {
                         </Col>
                         <Col md="3">
                             <Card className="shadow mt-4">
-                                <CardImg top width="100%" src={events3}/>
+                                <CardImg top width="100%" src={events4}/>
                                 <CardBody>
                                     <h4>Title</h4>
                                     <p>Date:</p>
@@ -174,7 +180,7 @@ export default class Whatsnew extends Component {
                         </Col>
                         <Col md="3">
                             <Card className="shadow mt-4">
-                                <CardImg top width="100%" src={events3}/>
+                                <CardImg top width="100%" src={events7}/>
                                 <CardBody>
                                     <h4>Title</h4>
                                     <p>Date:</p>
