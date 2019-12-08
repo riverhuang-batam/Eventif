@@ -26,7 +26,7 @@ export default class TicketFormCustomer extends Component {
                     <Container>
 
                         <Card className="shadow">
-                            <CardImg src={Ruangkreasi} alt={Ruangkreasi} width="100%" height="400vw"/>
+                            <CardImg src={RuangKreasi} alt={RuangKreasi} width="100%" height="400vw"/>
                             <Container>
                                 <h3>8 November</h3>
                                 
